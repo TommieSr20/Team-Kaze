@@ -1,0 +1,396 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Parry",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 112192257714920
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 499080850769545,
+					"parameters": {
+						"key": 83
+					}
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "Parry",
+					"sid": 654022266004273,
+					"disabled": true,
+					"isInverted": true
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 845410052554328,
+					"parameters": {
+						"variable": "Parry",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Shogun",
+					"sid": 445871584985067,
+					"parameters": {
+						"object": "Parry",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Parry",
+					"sid": 937050798227926,
+					"parameters": {
+						"x": "Shogun.x+20",
+						"y": "Shogun.y"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 352153841553938,
+					"parameters": {
+						"variable": "Parry",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "Parry",
+					"sid": 751254131000510,
+					"disabled": true,
+					"parameters": {
+						"width": "200",
+						"height": "200"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 450473014978732,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Parry",
+					"sid": 440501969032971
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 521699091834288,
+					"parameters": {
+						"variable": "Parry",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 623643117715326
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "pick-nearestfurthest",
+					"objectClass": "enemy1",
+					"sid": 242610979487316,
+					"parameters": {
+						"which": "nearest",
+						"x": "Shogun.X",
+						"y": "Shogun.Y"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 122079549882505
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "enemy1",
+					"sid": 474244722165405
+				}
+			],
+			"actions": [],
+			"sid": 856579677219602
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 523712766371629
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Sprite4",
+					"sid": 576663820152279,
+					"parameters": {
+						"object": "enemy1",
+						"image-point-optional": "0"
+					}
+				}
+			],
+			"sid": 876192674285669
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Shogun",
+					"sid": 649490623829070,
+					"parameters": {
+						"object": "Sprite4"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 607625243073286
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "enemy1",
+					"sid": 516202799279408,
+					"parameters": {
+						"object": "Sprite3",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 679108096846202
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite3",
+					"sid": 217944732662902
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Sprite3",
+					"sid": 801580445839144,
+					"parameters": {
+						"x": "Shogun.x",
+						"y": "Shogun.y"
+					}
+				},
+				{
+					"id": "set-acceleration",
+					"objectClass": "Sprite3",
+					"sid": 968659619538201,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"acceleration": "50"
+					}
+				}
+			],
+			"sid": 922416195275416
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 649128183109342
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite3",
+					"sid": 334824338388875
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Parry",
+					"sid": 485346249275748
+				}
+			],
+			"sid": 788444126622828
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 147193478506085
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Parry",
+					"sid": 986396138397251,
+					"parameters": {
+						"x": "Shogun.x + 20",
+						"y": "Shogun.y"
+					}
+				},
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Parry",
+					"sid": 346625198649431,
+					"parameters": {
+						"x": "enemy1.x",
+						"y": "enemy1.y"
+					}
+				}
+			],
+			"sid": 536136701120403
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 828531798654237
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemy2",
+					"sid": 595325004486870,
+					"parameters": {
+						"object": "Parry"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemy2",
+					"sid": 480658767551318
+				}
+			],
+			"sid": 588176242143327
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "Enemy2",
+					"sid": 904478681647772
+				}
+			],
+			"actions": [],
+			"sid": 123644095922088
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 824343544353774
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Sprite4",
+					"sid": 997701818002428,
+					"parameters": {
+						"x": "Enemy2.x",
+						"y": "Enemy2.x"
+					}
+				}
+			],
+			"sid": 472255281541311
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Sprite3",
+					"sid": 504112107318302,
+					"behaviorType": "Bullet"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "Sprite3",
+					"sid": 158372200325379,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"speed": "50"
+					}
+				}
+			],
+			"sid": 957736912130602
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Shogun",
+					"sid": 146603004565385,
+					"parameters": {
+						"object": "Sprite3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "bounce-off-object",
+					"objectClass": "Sprite3",
+					"sid": 195034671414557,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"object": "Parry"
+					}
+				}
+			],
+			"sid": 282627651390200
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 495606503249830
+		}
+	],
+	"sid": 167692257328876
+}
