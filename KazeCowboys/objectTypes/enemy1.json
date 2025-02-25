@@ -5,7 +5,13 @@
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 345256269695006
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [

@@ -390,6 +390,279 @@
 			"conditions": [],
 			"actions": [],
 			"sid": 495606503249830
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 802461498164098,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 545911311842871,
+					"parameters": {
+						"animation": "\"Run Left\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "Shogun",
+					"sid": 111530791473616,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 169755882277032
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 660724899381857,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 645916208889581,
+					"parameters": {
+						"animation": "\"Run Right\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 155535382208973
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 984701329809878,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Shogun",
+					"sid": 184898044370647
+				}
+			],
+			"sid": 189965514225921
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 986776948359762,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Shogun",
+					"sid": 323224137220869
+				}
+			],
+			"sid": 266701657363315
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 429817660185227,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 205632782531975,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 856641135811217
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 134604267822244
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 432288399435285,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 273018228718872
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 327116690652746,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 102029935028721,
+					"parameters": {
+						"animation": "\"Attack 1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 236230004756427
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 873620354758463,
+					"parameters": {
+						"mouse-button": "right",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 797508237382362,
+					"parameters": {
+						"animation": "\"Attack 2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 640593551898098
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "enemy1",
+					"sid": 429015392986734,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "Sprite2",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 262429195629281
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-falling",
+					"objectClass": "Shogun",
+					"sid": 325622149387039,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [],
+			"sid": 704482378230195
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-enabled",
+					"objectClass": "Sprite3",
+					"sid": 970627775769598,
+					"behaviorType": "Bullet"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-bounce-off-solids",
+					"objectClass": "Sprite3",
+					"sid": 473046613379265,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": false
+					}
+				}
+			],
+			"sid": 838846619211662
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Parry",
+					"sid": 726775698522492,
+					"parameters": {
+						"object": "enemy1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "enemy1",
+					"sid": 577781423392217
+				}
+			],
+			"sid": 786895299748594
 		}
 	],
 	"sid": 167692257328876
