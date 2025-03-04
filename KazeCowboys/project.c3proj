@@ -93,7 +93,9 @@
 			"Sprite4",
 			"Text",
 			"Sprite5",
-			"Mouse"
+			"Mouse",
+			"Turret",
+			"ShieldEnemy"
 		],
 		"subfolders": []
 	},
@@ -105,7 +107,9 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Layout 1",
+			"Layout 2",
+			"Layout 3"
 		],
 		"subfolders": []
 	},

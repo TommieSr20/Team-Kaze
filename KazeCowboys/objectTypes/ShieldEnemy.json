@@ -1,7 +1,7 @@
 {
-	"name": "Enemy2",
+	"name": "ShieldEnemy",
 	"plugin-id": "Sprite",
-	"sid": 223678984213733,
+	"sid": 784778715971706,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -14,23 +14,31 @@
 					{
 						"width": 32,
 						"height": 32,
-						"originX": 0.5994113799869196,
-						"originY": 0.8429661941112323,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9799651,
+						"imageSpriteId": 9118526,
 						"collisionPoly": {
 							"points": [
-								0,
-								0.014176663031624903,
-								0.9708960104643567,
-								0,
-								1,
-								0.8298800436205014,
-								0,
-								0.768811341330425
+								0.1875,
+								0.15625,
+								0.8125,
+								0.15625,
+								0.8125,
+								0.6875,
+								0.75,
+								0.90625,
+								0.53125,
+								0.96875,
+								0.46875,
+								0.96875,
+								0.25,
+								0.90625,
+								0.1875,
+								0.6875
 							]
 						},
 						"useCollisionPoly": true,
@@ -38,7 +46,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 452682793877218,
+				"sid": 335270577097947,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

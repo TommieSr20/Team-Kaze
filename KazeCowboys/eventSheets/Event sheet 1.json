@@ -112,8 +112,8 @@
 			"conditions": [
 				{
 					"id": "pick-nearestfurthest",
-					"objectClass": "enemy1",
-					"sid": 242610979487316,
+					"objectClass": "Turret",
+					"sid": 398419020287704,
 					"parameters": {
 						"which": "nearest",
 						"x": "Shogun.X",
@@ -129,8 +129,8 @@
 			"conditions": [
 				{
 					"id": "is-on-screen",
-					"objectClass": "enemy1",
-					"sid": 474244722165405
+					"objectClass": "Turret",
+					"sid": 999344178610144
 				}
 			],
 			"actions": [],
@@ -149,9 +149,9 @@
 				{
 					"id": "set-position-to-another-object",
 					"objectClass": "Sprite4",
-					"sid": 576663820152279,
+					"sid": 880559077366041,
 					"parameters": {
-						"object": "enemy1",
+						"object": "Turret",
 						"image-point-optional": "0"
 					}
 				}
@@ -178,8 +178,8 @@
 			"actions": [
 				{
 					"id": "spawn-another-object",
-					"objectClass": "enemy1",
-					"sid": 516202799279408,
+					"objectClass": "Turret",
+					"sid": 541337034999019,
 					"parameters": {
 						"object": "Sprite3",
 						"layer": "1",
@@ -287,8 +287,8 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Enemy2",
-					"sid": 595325004486870,
+					"objectClass": "ShieldEnemy",
+					"sid": 969819348318106,
 					"parameters": {
 						"object": "Parry"
 					}
@@ -297,8 +297,8 @@
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "Enemy2",
-					"sid": 480658767551318
+					"objectClass": "ShieldEnemy",
+					"sid": 959390298397191
 				}
 			],
 			"sid": 588176242143327
@@ -308,8 +308,8 @@
 			"conditions": [
 				{
 					"id": "is-on-screen",
-					"objectClass": "Enemy2",
-					"sid": 904478681647772
+					"objectClass": "ShieldEnemy",
+					"sid": 845529075224054
 				}
 			],
 			"actions": [],
@@ -595,8 +595,8 @@
 			"conditions": [
 				{
 					"id": "has-los-to-object",
-					"objectClass": "enemy1",
-					"sid": 429015392986734,
+					"objectClass": "Turret",
+					"sid": 361917040633128,
 					"behaviorType": "LineOfSight",
 					"parameters": {
 						"object": "Sprite2",
@@ -649,17 +649,17 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Parry",
-					"sid": 726775698522492,
+					"sid": 650964444484954,
 					"parameters": {
-						"object": "enemy1"
+						"object": "Turret"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "enemy1",
-					"sid": 577781423392217
+					"objectClass": "Turret",
+					"sid": 820260597234983
 				}
 			],
 			"sid": 786895299748594
