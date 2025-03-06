@@ -601,13 +601,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 54,
-					"sid": 528571633228925,
+					"uid": 62,
+					"sid": 425323979835598,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 528571633228925,
+						"sid": 425323979835598,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -616,10 +616,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 51,
-						"y": 7,
-						"width": 30.468212943984756,
-						"height": 3.877772556507151,
+						"x": 77,
+						"y": 24,
+						"width": 172.29770681244045,
+						"height": 46.48259809771211,
 						"originX": 0.45454545454545453,
 						"originY": 0.5,
 						"color": [
