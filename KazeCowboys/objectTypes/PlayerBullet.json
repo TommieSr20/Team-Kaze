@@ -1,36 +1,51 @@
 {
-	"name": "Enemy2",
+	"name": "PlayerBullet",
 	"plugin-id": "Sprite",
-	"sid": 223678984213733,
+	"sid": 233702744554209,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 487037802928869
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 803478154020283
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 32,
-						"height": 32,
-						"originX": 0.5994113799869196,
-						"originY": 0.8429661941112323,
+						"width": 19,
+						"height": 14,
+						"originX": 0.5730994152046783,
+						"originY": 0.25274725274725274,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9799651,
+						"imageSpriteId": 1226370,
 						"collisionPoly": {
 							"points": [
 								0,
-								0.014176663031624903,
-								0.9708960104643567,
 								0,
 								1,
-								0.8298800436205014,
 								0,
-								0.768811341330425
+								1,
+								0,
+								1,
+								0.956043956043956,
+								1,
+								1,
+								0,
+								1
 							]
 						},
 						"useCollisionPoly": true,
@@ -38,7 +53,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 452682793877218,
+				"sid": 341739494086135,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

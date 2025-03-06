@@ -29,13 +29,6 @@
 		},
 		{
 			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "TiledBg",
 			"name": "Tiled Background",
 			"author": "Scirra",
@@ -50,15 +43,15 @@
 		},
 		{
 			"type": "behavior",
-			"id": "LOS",
-			"name": "Line of sight",
+			"id": "Platform",
+			"name": "Platform",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "Platform",
-			"name": "Platform",
+			"id": "Sin",
+			"name": "Sine",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -95,25 +88,25 @@
 	"objectTypes": {
 		"items": [
 			"Shogun",
-			"enemy1",
 			"Sprite2",
-			"Enemy2",
-			"Enemy3",
-			"Sprite",
-			"Enemy4",
 			"Parry",
 			"Keyboard",
-			"Sprite3",
-			"Sprite4",
-			"Text",
-			"Sprite5",
+			"EnemyBullet",
 			"Mouse",
 			"Turret",
 			"ShieldEnemy",
-			"TiledBackground",
-			"Sprite6",
-			"Sprite7",
-			"Sprite8"
+			"City",
+			"HealthBar",
+			"GasStation",
+			"RockFloor",
+			"PlayerBullet",
+			"Wasteland",
+			"Car",
+			"Rock",
+			"House",
+			"RockTiles",
+			"ArmoredEnemy",
+			"CityTiles"
 		],
 		"subfolders": []
 	},
@@ -134,7 +127,8 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Game Event Sheet"
+			"Game Event Sheet",
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},
@@ -288,14 +282,14 @@
 		"zNear": 1,
 		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,
-		"loaderStyle": "splash",
+		"loaderStyle": "percent",
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
-	"viewportWidth": 500,
-	"viewportHeight": 550,
-	"firstLayout": null
+	"viewportWidth": 640,
+	"viewportHeight": 360,
+	"firstLayout": "Level 1"
 }

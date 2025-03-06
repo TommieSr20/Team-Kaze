@@ -1,7 +1,7 @@
 {
-	"name": "Sprite",
+	"name": "GasStation",
 	"plugin-id": "Sprite",
-	"sid": 342567015301667,
+	"sid": 297887447189586,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,33 +12,25 @@
 			{
 				"frames": [
 					{
-						"width": 32,
-						"height": 32,
+						"width": 64,
+						"height": 27,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.4444444444444444,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5543274,
+						"imageSpriteId": 4703652,
 						"collisionPoly": {
 							"points": [
-								0.375,
-								0.375,
-								0.78125,
-								0.375,
-								0.8125,
-								0.40625,
-								0.875,
-								0.84375,
-								0.875,
-								0.90625,
-								0.3125,
-								0.90625,
-								0.09375,
-								0.5625,
-								0.15625,
-								0.5
+								0.046875,
+								0.037037037037037035,
+								0.984375,
+								0.07407407407407407,
+								0.96875,
+								0.9629629629629629,
+								0.015625,
+								0.9629629629629629
 							]
 						},
 						"useCollisionPoly": true,
@@ -46,7 +38,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 454261688233164,
+				"sid": 423427088927165,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

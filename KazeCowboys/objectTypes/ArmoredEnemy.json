@@ -1,0 +1,64 @@
+{
+	"name": "ArmoredEnemy",
+	"plugin-id": "Sprite",
+	"sid": 549929331169619,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 19,
+						"height": 27,
+						"originX": 0.5263157894736842,
+						"originY": 0.4074074074074074,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4530704,
+						"collisionPoly": {
+							"points": [
+								0.42105263157894735,
+								0.037037037037037035,
+								0.5789473684210527,
+								0.037037037037037035,
+								0.7368421052631579,
+								0.14814814814814814,
+								0.9473684210526315,
+								0.3333333333333333,
+								0.9473684210526315,
+								0.8518518518518519,
+								0.7368421052631579,
+								0.9629629629629629,
+								0.2631578947368421,
+								0.9629629629629629,
+								0.05263157894736842,
+								0.8518518518518519,
+								0.05263157894736842,
+								0.3333333333333333,
+								0.2631578947368421,
+								0.14814814814814814
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 486527816456952,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,7 +1,7 @@
 {
-	"name": "TiledBackground",
+	"name": "Wasteland",
 	"plugin-id": "TiledBg",
-	"sid": 401019652176531,
+	"sid": 809336317944219,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -16,7 +16,7 @@
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 7869388,
+		"imageSpriteId": 5422824,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

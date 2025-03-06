@@ -1,0 +1,723 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Parry",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 476813351493848
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 837884688655961
+				}
+			],
+			"actions": [
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Turret",
+					"sid": 523655381653807,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Shogun"
+					}
+				}
+			],
+			"sid": 542055717768621
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-target",
+					"objectClass": "Turret",
+					"sid": 496642744718200,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-rate-of-fire",
+					"objectClass": "Turret",
+					"sid": 292568993896129,
+					"behaviorType": "Turret",
+					"parameters": {
+						"rate-of-fire": "1"
+					}
+				}
+			],
+			"sid": 100062703903110
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Turret",
+					"sid": 870734439451296,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Turret",
+					"sid": 212632547722793,
+					"parameters": {
+						"object": "EnemyBullet",
+						"layer": "\"Game\"",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 116677940978454
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "EnemyBullet",
+					"sid": 737071639181387,
+					"parameters": {
+						"object": "Shogun"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Shogun",
+					"sid": 278782464795098,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 886785878743065,
+					"parameters": {
+						"variable": "Parry",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 193382057103405
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ShieldEnemy",
+					"sid": 943381773703146,
+					"parameters": {
+						"object": "Shogun"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Shogun",
+					"sid": 600163098286570,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 471555440322839
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ArmoredEnemy",
+					"sid": 904925335948831,
+					"parameters": {
+						"object": "Shogun"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Shogun",
+					"sid": 448305208948115,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 548885072593576
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shogun",
+					"sid": 193735348396375,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HealthBar",
+					"sid": 862776102190183,
+					"parameters": {
+						"animation": "\"Full\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 615097752514377
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shogun",
+					"sid": 608014097585883,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HealthBar",
+					"sid": 650726745314764,
+					"parameters": {
+						"animation": "\"Medium\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 708443547273742
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shogun",
+					"sid": 983719366474088,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HealthBar",
+					"sid": 672718984917485,
+					"parameters": {
+						"animation": "\"Low\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 764520695032297
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shogun",
+					"sid": 680475876180777,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HealthBar",
+					"sid": 764116559822076,
+					"parameters": {
+						"animation": "\"VeryLow\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 760417290267924
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shogun",
+					"sid": 464699814295536,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HealthBar",
+					"sid": 801446769297956,
+					"parameters": {
+						"animation": "\"None\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 578994283212009,
+					"parameters": {
+						"animation": "\"Death\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 130276877768044,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Shogun",
+					"sid": 498869583032245
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 106038879469528
+				}
+			],
+			"sid": 217170396688913
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 505884538674437,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 791705659723695,
+					"parameters": {
+						"animation": "\"Run Left\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "Shogun",
+					"sid": 387865982417062,
+					"parameters": {
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 251414851641610
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 204061314039548,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 552691933659704,
+					"parameters": {
+						"animation": "\"Run Right\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 993408552353944
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 911250814525564,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Shogun",
+					"sid": 369084150686754
+				}
+			],
+			"sid": 406848558295698
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 674379494392465,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Shogun",
+					"sid": 902322116550171
+				}
+			],
+			"sid": 655426381283006
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 745274116335065,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 679532307125319,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 741147634369095
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 343951921398600
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 338099415516192,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 877437922302813
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 846215850385811,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 185099728350714,
+					"parameters": {
+						"animation": "\"Attack 1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 765421668196933
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 222171822090006,
+					"parameters": {
+						"mouse-button": "right",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 886083962884083,
+					"parameters": {
+						"animation": "\"Attack 2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 544887829607637
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 384311249954447,
+					"parameters": {
+						"key": 83
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 139278696536283,
+					"parameters": {
+						"variable": "Parry",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Shogun",
+					"sid": 938236534032530,
+					"parameters": {
+						"object": "Parry",
+						"layer": "1",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Parry",
+					"sid": 763554422288389,
+					"parameters": {
+						"x": "Shogun.x+20",
+						"y": "Shogun.y"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 347912366923915,
+					"parameters": {
+						"variable": "Parry",
+						"value": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 509466467268363,
+					"parameters": {
+						"seconds": "2",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Parry",
+					"sid": 198321934768908
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 732913750163411,
+					"parameters": {
+						"variable": "Parry",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 801780248028736
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Parry",
+					"sid": 524243436327253,
+					"parameters": {
+						"object": "EnemyBullet"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "EnemyBullet",
+					"sid": 205032864645149
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Parry",
+					"sid": 728086718092520,
+					"parameters": {
+						"object": "PlayerBullet",
+						"layer": "\"Game\"",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 922217817586723
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 750416792443349,
+					"parameters": {
+						"object": "Turret"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Turret",
+					"sid": 176600962456771
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerBullet",
+					"sid": 309796065612746
+				}
+			],
+			"sid": 749879227924786
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 893561747616513,
+					"parameters": {
+						"object": "ArmoredEnemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "ArmoredEnemy",
+					"sid": 285071122664877
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerBullet",
+					"sid": 479900422662417
+				}
+			],
+			"sid": 274868575748813
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 218580669907620,
+					"parameters": {
+						"object": "ShieldEnemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "ShieldEnemy",
+					"sid": 479542575401916
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerBullet",
+					"sid": 961229296772876
+				}
+			],
+			"sid": 351271534650042
+		}
+	],
+	"sid": 286330987879726
+}

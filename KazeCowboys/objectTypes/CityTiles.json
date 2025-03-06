@@ -1,0 +1,66 @@
+{
+	"name": "CityTiles",
+	"plugin-id": "Sprite",
+	"sid": 333071354797088,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 443399220268767
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 62,
+						"height": 18,
+						"originX": 0.5,
+						"originY": 0.05555555555555555,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9630927,
+						"collisionPoly": {
+							"points": [
+								0.14516129032258066,
+								0.05555555555555555,
+								0.8709677419354839,
+								0.05555555555555555,
+								0.9838709677419355,
+								0.6666666666666666,
+								0.9838709677419355,
+								0.8333333333333334,
+								0.9516129032258065,
+								0.9444444444444444,
+								0.04838709677419355,
+								0.9444444444444444,
+								0.016129032258064516,
+								0.8333333333333334,
+								0.016129032258064516,
+								0.6666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 320074929442880,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

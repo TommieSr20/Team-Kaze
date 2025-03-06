@@ -2,16 +2,6 @@
 	"name": "Game Event Sheet",
 	"events": [
 		{
-			"eventType": "variable",
-			"name": "Parry",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 112192257714920
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -114,6 +104,7 @@
 					"id": "pick-nearestfurthest",
 					"objectClass": "Turret",
 					"sid": 398419020287704,
+					"disabled": true,
 					"parameters": {
 						"which": "nearest",
 						"x": "Shogun.X",
@@ -130,7 +121,8 @@
 				{
 					"id": "is-on-screen",
 					"objectClass": "Turret",
-					"sid": 999344178610144
+					"sid": 999344178610144,
+					"disabled": true
 				}
 			],
 			"actions": [],
@@ -142,37 +134,21 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
-					"sid": 523712766371629
+					"sid": 523712766371629,
+					"disabled": true
 				}
 			],
-			"actions": [
-				{
-					"id": "set-position-to-another-object",
-					"objectClass": "Sprite4",
-					"sid": 880559077366041,
-					"parameters": {
-						"object": "Turret",
-						"image-point-optional": "0"
-					}
-				}
-			],
+			"actions": [],
 			"sid": 876192674285669
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "Shogun",
-					"sid": 649490623829070,
-					"parameters": {
-						"object": "Sprite4"
-					}
-				},
-				{
 					"id": "trigger-once-while-true",
 					"objectClass": "System",
-					"sid": 607625243073286
+					"sid": 607625243073286,
+					"disabled": true
 				}
 			],
 			"actions": [
@@ -180,8 +156,9 @@
 					"id": "spawn-another-object",
 					"objectClass": "Turret",
 					"sid": 541337034999019,
+					"disabled": true,
 					"parameters": {
-						"object": "Sprite3",
+						"object": "EnemyBullet",
 						"layer": "1",
 						"image-point": "0",
 						"create-hierarchy": false,
@@ -196,14 +173,14 @@
 			"conditions": [
 				{
 					"id": "on-created",
-					"objectClass": "Sprite3",
+					"objectClass": "EnemyBullet",
 					"sid": 217944732662902
 				}
 			],
 			"actions": [
 				{
 					"id": "set-angle-toward-position",
-					"objectClass": "Sprite3",
+					"objectClass": "EnemyBullet",
 					"sid": 801580445839144,
 					"parameters": {
 						"x": "Shogun.x",
@@ -212,7 +189,7 @@
 				},
 				{
 					"id": "set-acceleration",
-					"objectClass": "Sprite3",
+					"objectClass": "EnemyBullet",
 					"sid": 968659619538201,
 					"behaviorType": "Bullet",
 					"parameters": {
@@ -220,7 +197,8 @@
 					}
 				}
 			],
-			"sid": 922416195275416
+			"sid": 922416195275416,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -234,7 +212,7 @@
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "Sprite3",
+					"objectClass": "EnemyBullet",
 					"sid": 334824338388875
 				},
 				{
@@ -262,15 +240,6 @@
 					"parameters": {
 						"x": "Shogun.x + 20",
 						"y": "Shogun.y"
-					}
-				},
-				{
-					"id": "set-angle-toward-position",
-					"objectClass": "Parry",
-					"sid": 346625198649431,
-					"parameters": {
-						"x": "enemy1.x",
-						"y": "enemy1.y"
 					}
 				}
 			],
@@ -309,7 +278,8 @@
 				{
 					"id": "is-on-screen",
 					"objectClass": "ShieldEnemy",
-					"sid": 845529075224054
+					"sid": 845529075224054,
+					"disabled": true
 				}
 			],
 			"actions": [],
@@ -324,25 +294,16 @@
 					"sid": 824343544353774
 				}
 			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Sprite4",
-					"sid": 997701818002428,
-					"parameters": {
-						"x": "Enemy2.x",
-						"y": "Enemy2.x"
-					}
-				}
-			],
-			"sid": 472255281541311
+			"actions": [],
+			"sid": 472255281541311,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
 					"id": "is-enabled",
-					"objectClass": "Sprite3",
+					"objectClass": "EnemyBullet",
 					"sid": 504112107318302,
 					"behaviorType": "Bullet"
 				}
@@ -350,7 +311,7 @@
 			"actions": [
 				{
 					"id": "set-speed",
-					"objectClass": "Sprite3",
+					"objectClass": "EnemyBullet",
 					"sid": 158372200325379,
 					"behaviorType": "Bullet",
 					"parameters": {
@@ -358,7 +319,8 @@
 					}
 				}
 			],
-			"sid": 957736912130602
+			"sid": 957736912130602,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -368,14 +330,14 @@
 					"objectClass": "Shogun",
 					"sid": 146603004565385,
 					"parameters": {
-						"object": "Sprite3"
+						"object": "EnemyBullet"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "bounce-off-object",
-					"objectClass": "Sprite3",
+					"objectClass": "EnemyBullet",
 					"sid": 195034671414557,
 					"behaviorType": "Bullet",
 					"parameters": {
@@ -384,12 +346,6 @@
 				}
 			],
 			"sid": 282627651390200
-		},
-		{
-			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 495606503249830
 		},
 		{
 			"eventType": "block",
@@ -594,26 +550,10 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "has-los-to-object",
-					"objectClass": "Turret",
-					"sid": 361917040633128,
-					"behaviorType": "LineOfSight",
-					"parameters": {
-						"object": "Sprite2",
-						"image-point": "0"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 262429195629281
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "is-falling",
 					"objectClass": "Shogun",
 					"sid": 325622149387039,
+					"disabled": true,
 					"behaviorType": "Platform"
 				}
 			],
@@ -625,7 +565,7 @@
 			"conditions": [
 				{
 					"id": "is-enabled",
-					"objectClass": "Sprite3",
+					"objectClass": "EnemyBullet",
 					"sid": 970627775769598,
 					"behaviorType": "Bullet"
 				}
@@ -633,7 +573,7 @@
 			"actions": [
 				{
 					"id": "set-bounce-off-solids",
-					"objectClass": "Sprite3",
+					"objectClass": "EnemyBullet",
 					"sid": 473046613379265,
 					"behaviorType": "Bullet",
 					"parameters": {
@@ -641,7 +581,8 @@
 					}
 				}
 			],
-			"sid": 838846619211662
+			"sid": 838846619211662,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -672,22 +613,221 @@
 					"objectClass": "Shogun",
 					"sid": 882449938179318,
 					"parameters": {
-						"object": "Sprite3"
+						"object": "EnemyBullet"
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 933066239310406,
+					"id": "subtract-from-instvar",
+					"objectClass": "Shogun",
+					"sid": 377584242678784,
 					"parameters": {
-						"variable": "Parry",
+						"instance-variable": "Health",
 						"value": "1"
 					}
 				}
 			],
 			"sid": 483984988139200
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shogun",
+					"sid": 285357074664820,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HealthBar",
+					"sid": 680818419470655,
+					"parameters": {
+						"animation": "\"Full\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 838968817386750
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shogun",
+					"sid": 985606830324546,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HealthBar",
+					"sid": 167052655850812,
+					"parameters": {
+						"animation": "\"Medium\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 624693474948566
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shogun",
+					"sid": 782336392288529,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HealthBar",
+					"sid": 763804228538139,
+					"parameters": {
+						"animation": "\"Low\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 846693553880127
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shogun",
+					"sid": 122098142696186,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HealthBar",
+					"sid": 878615439119571,
+					"parameters": {
+						"animation": "\"VeryLow\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 527058834035220
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shogun",
+					"sid": 947494593072615,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HealthBar",
+					"sid": 629749151305180,
+					"parameters": {
+						"animation": "\"None\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 281357744839268,
+					"parameters": {
+						"seconds": "1.0",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Shogun",
+					"sid": 501246938915624
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 212846013495604
+				}
+			],
+			"sid": 754646288665475
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 944201073547587
+				}
+			],
+			"actions": [
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Turret",
+					"sid": 807137252460456,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Shogun"
+					}
+				}
+			],
+			"sid": 751944444823441
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-target",
+					"objectClass": "Turret",
+					"sid": 370510124624491,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-rate-of-fire",
+					"objectClass": "Turret",
+					"sid": 824830022071983,
+					"behaviorType": "Turret",
+					"parameters": {
+						"rate-of-fire": "1"
+					}
+				}
+			],
+			"sid": 137733838700126
 		}
 	],
 	"sid": 167692257328876
