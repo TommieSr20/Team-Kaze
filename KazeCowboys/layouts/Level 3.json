@@ -371,8 +371,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 591,
-						"y": 338,
+						"x": 568.6820592364793,
+						"y": 339.35263217824956,
 						"width": 19,
 						"height": 27,
 						"originX": 0.5263157894736842,
@@ -1110,6 +1110,93 @@
 						"height": 19,
 						"originX": 0,
 						"originY": 0.42105263157894735,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CityTiles",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 109,
+					"sid": 592468307952274,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 592468307952274,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 587.2784566274679,
+						"y": 157.00796575962192,
+						"width": 73,
+						"height": 21,
+						"originX": 0.5,
+						"originY": 0.05555555555555555,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EndDoor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 110,
+					"sid": 652381603047586,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 652381603047586,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 587.9547703637509,
+						"y": 140.77668313118488,
+						"width": 34,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

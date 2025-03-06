@@ -122,7 +122,9 @@
 			"RockTiles2",
 			"RealTurret",
 			"Title",
-			"StartButton"
+			"StartButton",
+			"Door",
+			"EndDoor"
 		],
 		"subfolders": []
 	},

@@ -756,6 +756,54 @@
 				}
 			],
 			"sid": 351271534650042
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Shogun",
+					"sid": 591963431513102,
+					"parameters": {
+						"object": "Door"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-nextprevious-layout",
+					"objectClass": "System",
+					"sid": 390074423914262,
+					"parameters": {
+						"which": "next"
+					}
+				}
+			],
+			"sid": 613928544801480
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Shogun",
+					"sid": 860806306623922,
+					"parameters": {
+						"object": "EndDoor"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 949670094809823,
+					"parameters": {
+						"layout": "\"Start Screen\""
+					}
+				}
+			],
+			"sid": 454578754225584
 		}
 	],
 	"sid": 286330987879726
