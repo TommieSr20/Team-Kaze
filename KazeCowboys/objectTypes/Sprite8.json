@@ -1,29 +1,18 @@
 {
-	"name": "Turret",
+	"name": "Sprite8",
 	"plugin-id": "Sprite",
-	"sid": 453652200857594,
+	"sid": 866380775449332,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [
-		{
-			"behaviorId": "LOS",
-			"name": "LineOfSight",
-			"sid": 839453238638561
-		},
-		{
-			"behaviorId": "Turret",
-			"name": "Turret",
-			"sid": 636625626063379
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 32,
+						"width": 64,
 						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -31,25 +20,21 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9463964,
+						"imageSpriteId": 9476097,
 						"collisionPoly": {
 							"points": [
-								0.375,
-								0.375,
-								0.78125,
-								0.375,
-								0.8125,
-								0.40625,
+								0.625,
+								0.53125,
 								0.875,
-								0.84375,
-								0.875,
-								0.90625,
-								0.3125,
-								0.90625,
-								0.09375,
-								0.5625,
-								0.15625,
-								0.5
+								0.53125,
+								0.921875,
+								0.59375,
+								1,
+								1,
+								0,
+								0.96875,
+								0.03125,
+								0.90625
 							]
 						},
 						"useCollisionPoly": true,
@@ -57,7 +42,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 834790756101893,
+				"sid": 830618834783002,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

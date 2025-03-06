@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 1",
+	"name": "Game Event Sheet",
 	"events": [
 		{
 			"eventType": "variable",
@@ -663,6 +663,31 @@
 				}
 			],
 			"sid": 786895299748594
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Shogun",
+					"sid": 882449938179318,
+					"parameters": {
+						"object": "Sprite3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 933066239310406,
+					"parameters": {
+						"variable": "Parry",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 483984988139200
 		}
 	],
 	"sid": 167692257328876

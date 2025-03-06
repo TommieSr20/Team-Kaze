@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Turret",
+			"name": "Turret",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
@@ -103,7 +110,10 @@
 			"Mouse",
 			"Turret",
 			"ShieldEnemy",
-			"TiledBackground"
+			"TiledBackground",
+			"Sprite6",
+			"Sprite7",
+			"Sprite8"
 		],
 		"subfolders": []
 	},
@@ -115,15 +125,16 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1",
-			"Layout 2",
-			"Layout 3"
+			"Level 1",
+			"Level 2",
+			"Level 3",
+			"Layout 1"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Game Event Sheet"
 		],
 		"subfolders": []
 	},

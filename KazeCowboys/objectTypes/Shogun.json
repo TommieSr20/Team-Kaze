@@ -4,7 +4,15 @@
 	"sid": 292627215179235,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "Health",
+			"type": "number",
+			"desc": "Shows the health of Player",
+			"show": true,
+			"sid": 220699324216410
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "scrollto",
