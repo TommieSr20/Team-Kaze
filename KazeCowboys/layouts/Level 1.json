@@ -632,8 +632,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 656.9726028378814,
-						"y": 170.92547741133134,
+						"x": 657.9726028378814,
+						"y": 169.92547741133134,
 						"width": 342.18427109444497,
 						"height": 33.54522030773512,
 						"originX": 0.5,
@@ -1159,12 +1159,12 @@
 						},
 						"Platform": {
 							"properties": {
-								"max-speed": 350,
-								"acceleration": 300,
+								"max-speed": 200,
+								"acceleration": 200,
 								"deceleration": 300,
-								"jump-strength": 650,
+								"jump-strength": 626,
 								"gravity": 1500,
-								"max-fall-speed": 1000,
+								"max-fall-speed": 600,
 								"double-jump": false,
 								"jump-sustain": 0,
 								"default-controls": true,

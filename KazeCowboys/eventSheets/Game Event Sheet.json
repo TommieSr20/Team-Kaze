@@ -438,6 +438,15 @@
 					"id": "stop-animation",
 					"objectClass": "Shogun",
 					"sid": 369084150686754
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 640601002732550,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 406848558295698
@@ -459,6 +468,15 @@
 					"id": "stop-animation",
 					"objectClass": "Shogun",
 					"sid": 902322116550171
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 542123065583631,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 655426381283006
