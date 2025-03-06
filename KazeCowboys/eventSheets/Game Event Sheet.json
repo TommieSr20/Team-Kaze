@@ -15,6 +15,32 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 825332329131245,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "StartButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 916289951357835,
+					"parameters": {
+						"layout": "\"Level 1\""
+					}
+				}
+			],
+			"sid": 109390252843331
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 837884688655961
@@ -23,8 +49,8 @@
 			"actions": [
 				{
 					"id": "add-object-to-target",
-					"objectClass": "Turret",
-					"sid": 523655381653807,
+					"objectClass": "RealTurret",
+					"sid": 376732515725866,
 					"behaviorType": "Turret",
 					"parameters": {
 						"target": "Shogun"
@@ -38,16 +64,16 @@
 			"conditions": [
 				{
 					"id": "has-target",
-					"objectClass": "Turret",
-					"sid": 496642744718200,
+					"objectClass": "RealTurret",
+					"sid": 102109971038267,
 					"behaviorType": "Turret"
 				}
 			],
 			"actions": [
 				{
 					"id": "set-rate-of-fire",
-					"objectClass": "Turret",
-					"sid": 292568993896129,
+					"objectClass": "RealTurret",
+					"sid": 703992409837612,
 					"behaviorType": "Turret",
 					"parameters": {
 						"rate-of-fire": "1"
@@ -61,16 +87,16 @@
 			"conditions": [
 				{
 					"id": "on-shoot",
-					"objectClass": "Turret",
-					"sid": 870734439451296,
+					"objectClass": "RealTurret",
+					"sid": 511004367357905,
 					"behaviorType": "Turret"
 				}
 			],
 			"actions": [
 				{
 					"id": "spawn-another-object",
-					"objectClass": "Turret",
-					"sid": 212632547722793,
+					"objectClass": "RealTurret",
+					"sid": 556020780777821,
 					"parameters": {
 						"object": "EnemyBullet",
 						"layer": "\"Game\"",
@@ -325,6 +351,14 @@
 					"id": "restart-layout",
 					"objectClass": "System",
 					"sid": 106038879469528
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 136436693881258,
+					"parameters": {
+						"reset-static": false
+					}
 				}
 			],
 			"sid": 217170396688913
@@ -657,6 +691,11 @@
 					"id": "destroy",
 					"objectClass": "Turret",
 					"sid": 176600962456771
+				},
+				{
+					"id": "destroy",
+					"objectClass": "RealTurret",
+					"sid": 683157070035570
 				},
 				{
 					"id": "destroy",

@@ -1,0 +1,66 @@
+{
+	"name": "RealTurret",
+	"plugin-id": "Sprite",
+	"sid": 786211754642582,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Turret",
+			"name": "Turret",
+			"sid": 282666854408360
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 27,
+						"height": 19,
+						"originX": 0,
+						"originY": 0.42105263157894735,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5490226,
+						"collisionPoly": {
+							"points": [
+								0.37037037037037035,
+								0.05263157894736842,
+								0.8518518518518519,
+								0.05263157894736842,
+								0.8888888888888888,
+								0.10526315789473684,
+								0.9629629629629629,
+								0.8421052631578947,
+								0.9629629629629629,
+								0.9473684210526315,
+								0.2962962962962963,
+								0.9473684210526315,
+								0.037037037037037035,
+								0.3684210526315789,
+								0.1111111111111111,
+								0.2631578947368421
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 939120888695410,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

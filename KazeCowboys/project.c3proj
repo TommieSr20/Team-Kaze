@@ -29,6 +29,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "TiledBg",
 			"name": "Tiled Background",
 			"author": "Scirra",
@@ -106,7 +113,16 @@
 			"House",
 			"RockTiles",
 			"ArmoredEnemy",
-			"CityTiles"
+			"CityTiles",
+			"CityTiles2",
+			"CityTiles3",
+			"PlatformSolids",
+			"PlatformSolids2",
+			"PlatformSolids3",
+			"RockTiles2",
+			"RealTurret",
+			"Title",
+			"StartButton"
 		],
 		"subfolders": []
 	},
@@ -121,7 +137,8 @@
 			"Level 1",
 			"Level 2",
 			"Level 3",
-			"Layout 1"
+			"Layout 1",
+			"Start Screen"
 		],
 		"subfolders": []
 	},
@@ -291,5 +308,5 @@
 	},
 	"viewportWidth": 640,
 	"viewportHeight": 360,
-	"firstLayout": "Level 1"
+	"firstLayout": "Start Screen"
 }
