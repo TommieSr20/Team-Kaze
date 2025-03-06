@@ -127,8 +127,8 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Game Event Sheet",
-			"Event sheet 1"
+			"Test Game Event Sheet",
+			"Game Event Sheet"
 		],
 		"subfolders": []
 	},
