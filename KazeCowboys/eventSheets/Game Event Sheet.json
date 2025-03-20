@@ -607,26 +607,6 @@
 					}
 				},
 				{
-					"id": "set-position",
-					"objectClass": "Parry",
-					"sid": 885762155884607,
-					"disabled": true,
-					"parameters": {
-						"x": "Shogun.x+20",
-						"y": "Shogun.y"
-					}
-				},
-				{
-					"id": "set-position-to-another-object",
-					"objectClass": "Parry",
-					"sid": 845817460933666,
-					"disabled": true,
-					"parameters": {
-						"object": "Shogun",
-						"image-point-optional": "0"
-					}
-				},
-				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
 					"sid": 347912366923915,
