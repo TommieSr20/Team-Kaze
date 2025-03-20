@@ -14,7 +14,7 @@
 				},
 				{
 					"id": "is-on-screen",
-					"objectClass": "Parry",
+					"objectClass": "SubParry",
 					"sid": 654022266004273,
 					"disabled": true,
 					"isInverted": true
@@ -36,7 +36,7 @@
 					"objectClass": "Shogun",
 					"sid": 445871584985067,
 					"parameters": {
-						"object": "Parry",
+						"object": "SubParry",
 						"layer": "1",
 						"image-point": "0",
 						"create-hierarchy": false,
@@ -45,7 +45,7 @@
 				},
 				{
 					"id": "set-position",
-					"objectClass": "Parry",
+					"objectClass": "SubParry",
 					"sid": 937050798227926,
 					"parameters": {
 						"x": "Shogun.x+20",
@@ -63,7 +63,7 @@
 				},
 				{
 					"id": "set-size",
-					"objectClass": "Parry",
+					"objectClass": "SubParry",
 					"sid": 751254131000510,
 					"disabled": true,
 					"parameters": {
@@ -82,7 +82,7 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "Parry",
+					"objectClass": "SubParry",
 					"sid": 440501969032971
 				},
 				{
@@ -217,7 +217,7 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "Parry",
+					"objectClass": "SubParry",
 					"sid": 485346249275748
 				}
 			],
@@ -235,7 +235,7 @@
 			"actions": [
 				{
 					"id": "set-position",
-					"objectClass": "Parry",
+					"objectClass": "SubParry",
 					"sid": 986396138397251,
 					"parameters": {
 						"x": "Shogun.x + 20",
@@ -259,7 +259,7 @@
 					"objectClass": "ShieldEnemy",
 					"sid": 969819348318106,
 					"parameters": {
-						"object": "Parry"
+						"object": "SubParry"
 					}
 				}
 			],
@@ -341,7 +341,7 @@
 					"sid": 195034671414557,
 					"behaviorType": "Bullet",
 					"parameters": {
-						"object": "Parry"
+						"object": "SubParry"
 					}
 				}
 			],
@@ -589,7 +589,7 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "Parry",
+					"objectClass": "SubParry",
 					"sid": 650964444484954,
 					"parameters": {
 						"object": "Turret"

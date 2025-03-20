@@ -129,15 +129,6 @@
 						"instance-variable": "Health",
 						"value": "1"
 					}
-				},
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 886785878743065,
-					"parameters": {
-						"variable": "Parry",
-						"value": "1"
-					}
 				}
 			],
 			"sid": 193382057103405
@@ -606,10 +597,10 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "Shogun",
-					"sid": 938236534032530,
+					"sid": 390752145699725,
 					"parameters": {
 						"object": "Parry",
-						"layer": "1",
+						"layer": "\"Game\"",
 						"image-point": "0",
 						"create-hierarchy": false,
 						"template-name": "\"\""
@@ -618,10 +609,21 @@
 				{
 					"id": "set-position",
 					"objectClass": "Parry",
-					"sid": 763554422288389,
+					"sid": 885762155884607,
+					"disabled": true,
 					"parameters": {
 						"x": "Shogun.x+20",
 						"y": "Shogun.y"
+					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Parry",
+					"sid": 845817460933666,
+					"disabled": true,
+					"parameters": {
+						"object": "Shogun",
+						"image-point-optional": "0"
 					}
 				},
 				{
@@ -636,16 +638,16 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 509466467268363,
+					"sid": 842646578139986,
 					"parameters": {
-						"seconds": "2",
+						"seconds": ".5",
 						"use-timescale": true
 					}
 				},
 				{
 					"id": "destroy",
 					"objectClass": "Parry",
-					"sid": 198321934768908
+					"sid": 638826952478714
 				},
 				{
 					"id": "set-eventvar-value",
@@ -663,9 +665,31 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 988522276032922
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Parry",
+					"sid": 818553127375918,
+					"parameters": {
+						"x": "Shogun.x+20",
+						"y": "Shogun.y"
+					}
+				}
+			],
+			"sid": 757264397156786
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Parry",
-					"sid": 524243436327253,
+					"sid": 274950476289305,
 					"parameters": {
 						"object": "EnemyBullet"
 					}
@@ -680,7 +704,7 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "Parry",
-					"sid": 728086718092520,
+					"sid": 357408628605036,
 					"parameters": {
 						"object": "PlayerBullet",
 						"layer": "\"Game\"",

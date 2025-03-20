@@ -96,7 +96,7 @@
 		"items": [
 			"Shogun",
 			"Sprite2",
-			"Parry",
+			"SubParry",
 			"Keyboard",
 			"EnemyBullet",
 			"Mouse",
@@ -124,7 +124,8 @@
 			"Title",
 			"StartButton",
 			"Door",
-			"EndDoor"
+			"EndDoor",
+			"Parry"
 		],
 		"subfolders": []
 	},
