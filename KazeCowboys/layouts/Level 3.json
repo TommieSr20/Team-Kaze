@@ -1045,7 +1045,9 @@
 					"uid": 102,
 					"sid": 365897806954272,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"enemyhealth": 1
+					},
 					"behaviors": {
 						"Turret": {
 							"properties": {
@@ -1099,7 +1101,9 @@
 					"uid": 103,
 					"sid": 400678202786964,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"enemyhealth": 1
+					},
 					"behaviors": {
 						"Turret": {
 							"properties": {

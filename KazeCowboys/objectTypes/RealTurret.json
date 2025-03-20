@@ -4,7 +4,15 @@
 	"sid": 786211754642582,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "enemyhealth",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 686130222751694
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Turret",

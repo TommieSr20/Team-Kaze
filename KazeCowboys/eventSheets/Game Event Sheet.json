@@ -12,6 +12,16 @@
 			"sid": 476813351493848
 		},
 		{
+			"eventType": "variable",
+			"name": "enemycount",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 853712259924235
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -716,16 +726,53 @@
 				},
 				{
 					"id": "destroy",
-					"objectClass": "RealTurret",
-					"sid": 683157070035570
-				},
-				{
-					"id": "destroy",
 					"objectClass": "PlayerBullet",
 					"sid": 309796065612746
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "RealTurret",
+					"sid": 522242275467419,
+					"parameters": {
+						"instance-variable": "enemyhealth",
+						"value": "1"
+					}
 				}
 			],
 			"sid": 749879227924786
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "RealTurret",
+					"sid": 256112058483277,
+					"parameters": {
+						"instance-variable": "enemyhealth",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "RealTurret",
+					"sid": 550011598800158
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 550443490018658,
+					"disabled": true,
+					"parameters": {
+						"variable": "enemycount",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 214237630251329
 		},
 		{
 			"eventType": "block",

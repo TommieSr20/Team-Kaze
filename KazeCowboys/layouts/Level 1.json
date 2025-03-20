@@ -892,7 +892,9 @@
 					"uid": 97,
 					"sid": 150749392588729,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"enemyhealth": 1
+					},
 					"behaviors": {
 						"Turret": {
 							"properties": {
@@ -1038,9 +1040,11 @@
 						"live-preview": false
 					},
 					"uid": 98,
-					"sid": 708235939152478,
+					"sid": 834327247231121,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"enemyhealth": 1
+					},
 					"behaviors": {
 						"Turret": {
 							"properties": {
@@ -1057,7 +1061,7 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 708235939152478,
+						"sid": 834327247231121,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
