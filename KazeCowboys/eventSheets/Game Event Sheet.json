@@ -677,6 +677,75 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 604670281247076,
+					"parameters": {
+						"object": "RealTurret"
+					}
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 612695881479524,
+					"parameters": {
+						"object": "Turret"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 713193018686034,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PlayerBullet",
+							"sid": 809791535800781,
+							"parameters": {
+								"object": "RealTurret"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Turret",
+							"sid": 449187409908605
+						},
+						{
+							"id": "destroy",
+							"objectClass": "RealTurret",
+							"sid": 471811895344541
+						}
+					],
+					"sid": 679727200724165
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "RealTurret",
+							"sid": 420880092693151
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Turret",
+							"sid": 721880734803397
+						}
+					],
+					"sid": 390326688860788
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Parry",
 					"sid": 274950476289305,
@@ -712,18 +781,14 @@
 				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "PlayerBullet",
-					"sid": 750416792443349,
+					"sid": 888889029669714,
+					"disabled": true,
 					"parameters": {
-						"object": "Turret"
+						"object": "RealTurret"
 					}
 				}
 			],
 			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Turret",
-					"sid": 176600962456771
-				},
 				{
 					"id": "destroy",
 					"objectClass": "PlayerBullet",
@@ -739,7 +804,8 @@
 					}
 				}
 			],
-			"sid": 749879227924786
+			"sid": 749879227924786,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -772,7 +838,8 @@
 					}
 				}
 			],
-			"sid": 214237630251329
+			"sid": 214237630251329,
+			"disabled": true
 		},
 		{
 			"eventType": "block",

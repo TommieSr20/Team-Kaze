@@ -148,7 +148,8 @@
 	"eventSheets": {
 		"items": [
 			"Test Game Event Sheet",
-			"Game Event Sheet"
+			"Game Event Sheet",
+			"Player Movement"
 		],
 		"subfolders": []
 	},
