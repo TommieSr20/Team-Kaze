@@ -1,0 +1,60 @@
+{
+	"name": "ShogunParry",
+	"plugin-id": "Sprite",
+	"sid": 945148185824847,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 43,
+						"height": 55,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5249742,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.2054545454545454,
+								0,
+								0.2590082644628098,
+								0.004326663061114289,
+								0.3125619834710744,
+								0.10978907517577068,
+								0.4018181818181818,
+								0.17306652244456477,
+								0.5089256198347107,
+								0.2152514872904274,
+								1,
+								0,
+								1,
+								0,
+								0.9552066115702479
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 638671031784951,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

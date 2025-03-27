@@ -125,7 +125,8 @@
 			"StartButton",
 			"Door",
 			"EndDoor",
-			"Parry"
+			"Parry",
+			"ShogunParry"
 		],
 		"subfolders": []
 	},
@@ -141,7 +142,15 @@
 			"Level 2",
 			"Level 3",
 			"Layout 1",
-			"Start Screen"
+			"Start Screen",
+			"StartHub",
+			"DesertLevel1",
+			"DesertLevel2",
+			"Desertlevel3",
+			"MiniDesertLevel",
+			"DesertLevel4",
+			"DesertLevel5",
+			"DesertLevel6"
 		],
 		"subfolders": []
 	},

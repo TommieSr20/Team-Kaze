@@ -1601,7 +1601,7 @@
 						"isPingPong": false,
 						"repeatCount": 1,
 						"repeatTo": 0,
-						"speed": 5
+						"speed": 8
 					},
 					{
 						"frames": [
