@@ -1085,46 +1085,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "ShogunParry",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 100,
-					"sid": 379315872253242,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 379315872253242,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": -74,
-						"y": 244,
-						"width": 43,
-						"height": 55,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 117677033061736,
@@ -1269,46 +1229,6 @@
 					}
 				},
 				{
-					"type": "SubParry",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 3,
-					"sid": 199084855958540,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 199084855958540,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": -102,
-						"y": -78,
-						"width": 24.78572204785676,
-						"height": 22.954741219018384,
-						"originX": 0.48333333333333334,
-						"originY": 0.4423076923076923,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "PlayerBullet",
 					"properties": {
 						"initially-visible": true,
@@ -1358,10 +1278,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -34,
-						"y": -77,
-						"width": 19,
-						"height": 14,
+						"x": -40.30409356725146,
+						"y": -79.02197802197801,
+						"width": 8,
+						"height": 6,
 						"originX": 0.5730994152046783,
 						"originY": 0.25274725274725274,
 						"color": [
