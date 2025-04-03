@@ -126,7 +126,10 @@
 			"Door",
 			"EndDoor",
 			"Parry",
-			"ShogunParry"
+			"ShogunParry",
+			"Level2",
+			"Level3",
+			"Level1"
 		],
 		"subfolders": []
 	},
@@ -150,7 +153,21 @@
 			"MiniDesertLevel",
 			"DesertLevel4",
 			"DesertLevel5",
-			"DesertLevel6"
+			"DesertLevel6",
+			"CityLevel1",
+			"CityLevel2",
+			"CityLevel3",
+			"MiniCityLevel",
+			"CityLevel4",
+			"CityLevel5",
+			"CityLevel6",
+			"SewersLevel1",
+			"SewersLevel2",
+			"SewersLevel3",
+			"MiniSewersLevel",
+			"SewersLevel4",
+			"SewersLevel5",
+			"SewersLevel6"
 		],
 		"subfolders": []
 	},

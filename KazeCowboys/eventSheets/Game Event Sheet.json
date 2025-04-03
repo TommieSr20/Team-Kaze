@@ -396,6 +396,84 @@
 				}
 			],
 			"sid": 351271534650042
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 213604373355507,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Level1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 800511688284767,
+					"parameters": {
+						"layout": "\"DesertLevel1\""
+					}
+				}
+			],
+			"sid": 892548000959595
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 795352196428862,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Level2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 636842495681363,
+					"parameters": {
+						"layout": "\"CityLevel1\""
+					}
+				}
+			],
+			"sid": 339764468077457
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 797135281682857,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Level3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 283020976176952,
+					"parameters": {
+						"layout": "\"SewersLevel1\""
+					}
+				}
+			],
+			"sid": 633207582459966
 		}
 	],
 	"sid": 286330987879726
