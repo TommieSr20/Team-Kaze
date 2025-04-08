@@ -256,7 +256,7 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "ShieldEnemy",
+					"objectClass": "FlyingEnemy",
 					"sid": 969819348318106,
 					"parameters": {
 						"object": "SubParry"
@@ -266,7 +266,7 @@
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "ShieldEnemy",
+					"objectClass": "FlyingEnemy",
 					"sid": 959390298397191
 				}
 			],
@@ -277,7 +277,7 @@
 			"conditions": [
 				{
 					"id": "is-on-screen",
-					"objectClass": "ShieldEnemy",
+					"objectClass": "FlyingEnemy",
 					"sid": 845529075224054,
 					"disabled": true
 				}

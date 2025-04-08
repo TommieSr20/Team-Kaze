@@ -1,5 +1,5 @@
 {
-	"name": "ShieldEnemy",
+	"name": "FlyingEnemy",
 	"plugin-id": "Sprite",
 	"sid": 784778715971706,
 	"isGlobal": false,
@@ -10,6 +10,11 @@
 			"behaviorId": "Sin",
 			"name": "Sine",
 			"sid": 136535761500025
+		},
+		{
+			"behaviorId": "Turret",
+			"name": "Turret",
+			"sid": 669464108182981
 		}
 	],
 	"effectTypes": [],

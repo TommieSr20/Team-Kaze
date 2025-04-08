@@ -1,0 +1,302 @@
+{
+	"name": "Enemy Movement",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 488569997297276
+				}
+			],
+			"actions": [
+				{
+					"id": "add-object-to-target",
+					"objectClass": "RealTurret",
+					"sid": 339364602832251,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Shogun"
+					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "FlyingEnemy",
+					"sid": 969855671771219,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Shogun"
+					}
+				}
+			],
+			"sid": 925526834857545
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-target",
+					"objectClass": "RealTurret",
+					"sid": 398343557809857,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-rate-of-fire",
+					"objectClass": "RealTurret",
+					"sid": 303617241916527,
+					"behaviorType": "Turret",
+					"parameters": {
+						"rate-of-fire": "1"
+					}
+				}
+			],
+			"sid": 877848500104015
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-target",
+					"objectClass": "FlyingEnemy",
+					"sid": 595542872143372,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-rate-of-fire",
+					"objectClass": "FlyingEnemy",
+					"sid": 541553777561182,
+					"behaviorType": "Turret",
+					"parameters": {
+						"rate-of-fire": "4"
+					}
+				}
+			],
+			"sid": 298644674371896
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "RealTurret",
+					"sid": 107274624220101,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "RealTurret",
+					"sid": 865509596066921,
+					"parameters": {
+						"object": "EnemyBullet",
+						"layer": "\"Game\"",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 395074412201476
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "FlyingEnemy",
+					"sid": 203262633939752,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "FlyingEnemy",
+					"sid": 936603721373224,
+					"parameters": {
+						"object": "EnemyBullet",
+						"layer": "\"Game\"",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 537869977726167
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 124711760358126,
+					"parameters": {
+						"object": "RealTurret"
+					}
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 626647190233911,
+					"parameters": {
+						"object": "Turret"
+					}
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 412475685538763,
+					"parameters": {
+						"object": "FlyingEnemy"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 753432692294988,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "PlayerBullet",
+							"sid": 526821400404552,
+							"parameters": {
+								"object": "RealTurret"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Turret",
+							"sid": 318717282324910
+						},
+						{
+							"id": "destroy",
+							"objectClass": "RealTurret",
+							"sid": 985585147942807
+						},
+						{
+							"id": "destroy",
+							"objectClass": "FlyingEnemy",
+							"sid": 172186335166255
+						}
+					],
+					"sid": 180311271256733
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "RealTurret",
+							"sid": 351260651800159
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Turret",
+							"sid": 167682359949075
+						}
+					],
+					"sid": 451317798698086
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "ShogunParry",
+					"sid": 163546638026809,
+					"parameters": {
+						"object": "EnemyBullet"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "EnemyBullet",
+					"sid": 290091551603889
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "ShogunParry",
+					"sid": 391718946283809,
+					"parameters": {
+						"object": "PlayerBullet",
+						"layer": "\"Game\"",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 752176607918470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 897453966756760,
+					"parameters": {
+						"object": "ArmoredEnemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "ArmoredEnemy",
+					"sid": 261526260237943
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerBullet",
+					"sid": 242349734122592
+				}
+			],
+			"sid": 687966904440051
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 674828250612065,
+					"parameters": {
+						"object": "FlyingEnemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "FlyingEnemy",
+					"sid": 923354664089620
+				},
+				{
+					"id": "destroy",
+					"objectClass": "PlayerBullet",
+					"sid": 691465813056539
+				}
+			],
+			"sid": 803609261328225
+		}
+	],
+	"sid": 280257233755955
+}

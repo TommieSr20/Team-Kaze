@@ -26,7 +26,8 @@
 					}
 				}
 			],
-			"sid": 286708848201862
+			"sid": 286708848201862,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -53,7 +54,8 @@
 					}
 				}
 			],
-			"sid": 167241171294391
+			"sid": 167241171294391,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -80,7 +82,8 @@
 					}
 				}
 			],
-			"sid": 150617517363603
+			"sid": 150617517363603,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -107,7 +110,8 @@
 					}
 				}
 			],
-			"sid": 878133270599814
+			"sid": 878133270599814,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -353,18 +357,18 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Shogun",
-					"sid": 896366993245510,
+					"sid": 867946942001604,
 					"parameters": {
-						"animation": "\"Attack 1\"",
+						"animation": "\"Parry\"",
 						"from": "beginning"
 					}
 				},
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 314299280021925,
+					"sid": 613475607668852,
 					"parameters": {
-						"seconds": ".7",
+						"seconds": ".4",
 						"use-timescale": true
 					}
 				},
@@ -545,6 +549,45 @@
 				}
 			],
 			"sid": 888227680925653
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "EnemyBullet",
+					"sid": 527094795434006,
+					"parameters": {
+						"object": "Shogun"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 269626539074123,
+					"parameters": {
+						"animation": "\"Hit\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Shogun",
+					"sid": 457954228077476,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Shogun",
+					"sid": 121268237525197
+				}
+			],
+			"sid": 830056248957106
 		}
 	],
 	"sid": 423247619378648

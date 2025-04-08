@@ -120,8 +120,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 148,
-						"y": 292,
+						"x": 112,
+						"y": 409,
 						"width": 171.57161854276117,
 						"height": 44.192689624650605,
 						"originX": 0.5,
@@ -477,8 +477,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 147,
-						"y": 339,
+						"x": 111,
+						"y": 449,
 						"width": 161,
 						"height": 24,
 						"originX": 0.5,
@@ -524,8 +524,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 190,
-						"y": 301,
+						"x": 155,
+						"y": 413,
 						"width": 43,
 						"height": 8,
 						"originX": 0.5,
@@ -707,8 +707,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 288,
-						"y": 325,
+						"x": 286,
+						"y": 324,
 						"width": 27,
 						"height": 19,
 						"originX": 0,
@@ -779,7 +779,7 @@
 					}
 				},
 				{
-					"type": "ShieldEnemy",
+					"type": "FlyingEnemy",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -805,6 +805,19 @@
 								"enabled": true,
 								"live-preview": false
 							}
+						},
+						"Turret": {
+							"properties": {
+								"range": 300,
+								"rate-of-fire": 1,
+								"rotate": true,
+								"rotate-speed": 180,
+								"target-mode": "first-in-range",
+								"predictive-aim": false,
+								"projectile-speed": 500,
+								"use-collision-cells": true,
+								"enabled": true
+							}
 						}
 					},
 					"instanceFolderItem": {
@@ -817,8 +830,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 585,
-						"y": 321,
+						"x": 567,
+						"y": 419,
 						"width": 22,
 						"height": 28,
 						"originX": 0.5,
@@ -921,7 +934,7 @@
 					"locked": false,
 					"world": {
 						"x": 286,
-						"y": 324,
+						"y": 323,
 						"width": 27,
 						"height": 19,
 						"originX": 0,
@@ -1014,8 +1027,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 539,
-						"y": 176,
+						"x": 696,
+						"y": 78,
 						"width": 27,
 						"height": 19,
 						"originX": 0,
@@ -1070,8 +1083,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 541,
-						"y": 177,
+						"x": 696,
+						"y": 78,
 						"width": 27,
 						"height": 19,
 						"originX": 0,
@@ -1145,8 +1158,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 77,
-						"y": 21,
+						"x": 94,
+						"y": -78,
 						"width": 172.29770681244045,
 						"height": 46.48259809771211,
 						"originX": 0.45454545454545453,
@@ -1174,7 +1187,7 @@
 					"sid": 721301580035858,
 					"tags": "",
 					"instanceVariables": {
-						"Health": 4
+						"Health": 10
 					},
 					"behaviors": {
 						"ScrollTo": {
@@ -1331,6 +1344,74 @@
 						"height": 33,
 						"originX": 0.5079365079365079,
 						"originY": -0.7,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FlyingEnemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 114,
+					"sid": 885641930030520,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Turret": {
+							"properties": {
+								"range": 300,
+								"rate-of-fire": 1,
+								"rotate": true,
+								"rotate-speed": 180,
+								"target-mode": "first-in-range",
+								"predictive-aim": false,
+								"projectile-speed": 500,
+								"use-collision-cells": true,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 885641930030520,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 160,
+						"y": 252,
+						"width": 22,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.42857142857142855,
 						"color": [
 							1,
 							1,
