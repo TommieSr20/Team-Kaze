@@ -1,5 +1,5 @@
 {
-	"name": "ArmoredEnemy",
+	"name": "DroneEnemy",
 	"plugin-id": "Sprite",
 	"sid": 549929331169619,
 	"isGlobal": false,
@@ -7,9 +7,14 @@
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Sin",
-			"name": "Sine",
-			"sid": 698729639134547
+			"behaviorId": "Turret",
+			"name": "Turret",
+			"sid": 827697455054978
+		},
+		{
+			"behaviorId": "Follow",
+			"name": "Follow",
+			"sid": 192967557653916
 		}
 	],
 	"effectTypes": [],

@@ -290,6 +290,15 @@
 						"animation": "\"Idle\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "set-deceleration",
+					"objectClass": "Shogun",
+					"sid": 292294040857584,
+					"behaviorType": "Platform",
+					"parameters": {
+						"deceleration": "100000"
+					}
 				}
 			],
 			"sid": 408764337231183

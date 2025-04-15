@@ -724,7 +724,7 @@
 					}
 				},
 				{
-					"type": "ArmoredEnemy",
+					"type": "DroneEnemy",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -737,18 +737,35 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
-						"Sine": {
+						"Turret": {
 							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 50,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
+								"range": 300,
+								"rate-of-fire": 1,
+								"rotate": true,
+								"rotate-speed": 180,
+								"target-mode": "first-in-range",
+								"predictive-aim": false,
+								"projectile-speed": 500,
+								"use-collision-cells": true,
+								"enabled": true
+							}
+						},
+						"Follow": {
+							"properties": {
+								"mode": "distance",
+								"delay": 5,
+								"max-delay": 5,
+								"history-rate": 30,
+								"follow-x": false,
+								"follow-y": false,
+								"follow-z-elevation": false,
+								"follow-width": false,
+								"follow-height": false,
+								"follow-angle": false,
+								"follow-opacity": false,
+								"follow-visibility": false,
+								"follow-destroyed": false,
+								"enabled": true
 							}
 						}
 					},
@@ -762,8 +779,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 697,
-						"y": 219,
+						"x": 245,
+						"y": 251,
 						"width": 19,
 						"height": 27,
 						"originX": 0.5263157894736842,
@@ -979,116 +996,6 @@
 						"height": 51,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Turret",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 34,
-					"sid": 567130329852847,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Turret": {
-							"properties": {
-								"range": 300,
-								"rate-of-fire": 1,
-								"rotate": true,
-								"rotate-speed": 80,
-								"target-mode": "first-in-range",
-								"predictive-aim": false,
-								"projectile-speed": 500,
-								"use-collision-cells": true,
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 567130329852847,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 696,
-						"y": 78,
-						"width": 27,
-						"height": 19,
-						"originX": 0,
-						"originY": 0.42105263157894735,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "RealTurret",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 98,
-					"sid": 834327247231121,
-					"tags": "",
-					"instanceVariables": {
-						"enemyhealth": 1
-					},
-					"behaviors": {
-						"Turret": {
-							"properties": {
-								"range": 300,
-								"rate-of-fire": 1,
-								"rotate": true,
-								"rotate-speed": 80,
-								"target-mode": "first-in-range",
-								"predictive-aim": false,
-								"projectile-speed": 500,
-								"use-collision-cells": true,
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 834327247231121,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 696,
-						"y": 78,
-						"width": 27,
-						"height": 19,
-						"originX": 0,
-						"originY": 0.42105263157894735,
 						"color": [
 							1,
 							1,

@@ -346,7 +346,7 @@
 					}
 				},
 				{
-					"type": "ArmoredEnemy",
+					"type": "DroneEnemy",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -359,18 +359,35 @@
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
-						"Sine": {
+						"Turret": {
 							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 50,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
+								"range": 300,
+								"rate-of-fire": 1,
+								"rotate": true,
+								"rotate-speed": 180,
+								"target-mode": "first-in-range",
+								"predictive-aim": false,
+								"projectile-speed": 500,
+								"use-collision-cells": true,
+								"enabled": true
+							}
+						},
+						"Follow": {
+							"properties": {
+								"mode": "time",
+								"delay": 1,
+								"max-delay": 1,
+								"history-rate": 30,
+								"follow-x": true,
+								"follow-y": true,
+								"follow-z-elevation": false,
+								"follow-width": false,
+								"follow-height": false,
+								"follow-angle": false,
+								"follow-opacity": false,
+								"follow-visibility": false,
+								"follow-destroyed": true,
+								"enabled": true
 							}
 						}
 					},

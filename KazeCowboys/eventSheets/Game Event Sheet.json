@@ -75,7 +75,7 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
-					"objectClass": "ArmoredEnemy",
+					"objectClass": "DroneEnemy",
 					"sid": 904925335948831,
 					"parameters": {
 						"object": "Shogun"
