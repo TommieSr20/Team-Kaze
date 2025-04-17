@@ -753,18 +753,18 @@
 						"Follow": {
 							"properties": {
 								"mode": "distance",
-								"delay": 5,
-								"max-delay": 5,
+								"delay": 1,
+								"max-delay": 1,
 								"history-rate": 30,
-								"follow-x": false,
-								"follow-y": false,
+								"follow-x": true,
+								"follow-y": true,
 								"follow-z-elevation": false,
 								"follow-width": false,
 								"follow-height": false,
 								"follow-angle": false,
 								"follow-opacity": false,
 								"follow-visibility": false,
-								"follow-destroyed": false,
+								"follow-destroyed": true,
 								"enabled": true
 							}
 						}
@@ -779,8 +779,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 589,
-						"y": -91,
+						"x": 282,
+						"y": 280,
 						"width": 19,
 						"height": 27,
 						"originX": 0.5263157894736842,

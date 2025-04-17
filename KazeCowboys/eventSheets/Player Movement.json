@@ -149,9 +149,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 284157686620236,
+					"sid": 834978284351730,
 					"parameters": {
-						"seconds": "2",
+						"seconds": "5",
 						"use-timescale": true
 					}
 				},
@@ -391,6 +391,7 @@
 					"id": "set-animation",
 					"objectClass": "Shogun",
 					"sid": 914627087931080,
+					"disabled": true,
 					"parameters": {
 						"animation": "\"Idle\"",
 						"from": "beginning"
@@ -581,9 +582,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Shogun",
-					"sid": 269626539074123,
+					"sid": 636371854392665,
 					"parameters": {
-						"animation": "\"Hit\"",
+						"animation": "\"Hir\"",
 						"from": "beginning"
 					}
 				},
@@ -595,11 +596,6 @@
 						"instance-variable": "Health",
 						"value": "1"
 					}
-				},
-				{
-					"id": "stop-animation",
-					"objectClass": "Shogun",
-					"sid": 121268237525197
 				}
 			],
 			"sid": 830056248957106
