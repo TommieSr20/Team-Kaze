@@ -207,7 +207,8 @@
 					}
 				}
 			],
-			"sid": 749729700306550
+			"sid": 749729700306550,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -232,7 +233,8 @@
 					}
 				}
 			],
-			"sid": 585969223334761
+			"sid": 585969223334761,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -262,7 +264,8 @@
 					}
 				}
 			],
-			"sid": 275569320536597
+			"sid": 275569320536597,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -301,7 +304,8 @@
 					}
 				}
 			],
-			"sid": 408764337231183
+			"sid": 408764337231183,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -326,7 +330,8 @@
 					}
 				}
 			],
-			"sid": 912227671819979
+			"sid": 912227671819979,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -348,7 +353,8 @@
 					}
 				}
 			],
-			"sid": 753769519144728
+			"sid": 753769519144728,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -597,6 +603,171 @@
 				}
 			],
 			"sid": 830056248957106
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 740033975398128,
+					"parameters": {
+						"key": 39
+					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Shogun",
+					"sid": 214680780102033
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Shogun",
+					"sid": 454489458560519,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 411844252291533
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 727621189845745,
+					"parameters": {
+						"key": 37
+					}
+				},
+				{
+					"id": "is-mirrored",
+					"objectClass": "Shogun",
+					"sid": 574010710703576,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Shogun",
+					"sid": 985032871127827,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 530858750276294
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 606826418595572,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 941985205141636,
+					"parameters": {
+						"animation": "\"Jump\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 187439647224845
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Shogun",
+					"sid": 235344740340727,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "Shogun",
+					"sid": 660297300265632,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 774648104683629,
+					"parameters": {
+						"animation": "\"Run\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 440324215414875
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-stopped",
+					"objectClass": "Shogun",
+					"sid": 667435441060847,
+					"behaviorType": "Platform"
+				},
+				{
+					"id": "is-on-floor",
+					"objectClass": "Shogun",
+					"sid": 327673250081529,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 599359836637853,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 900355592379277
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-landed",
+					"objectClass": "Shogun",
+					"sid": 539885228376022,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Shogun",
+					"sid": 753248510454821,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 420884160474881
 		}
 	],
 	"sid": 423247619378648
