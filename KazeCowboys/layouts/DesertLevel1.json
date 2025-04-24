@@ -40,8 +40,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2,
-						"y": 0,
+						"x": 24,
+						"y": 402,
 						"width": 641,
 						"height": 361,
 						"originX": 0,
@@ -130,7 +130,7 @@
 						"x": 97,
 						"y": 332,
 						"width": 112.3782669354994,
-						"height": 28.945917240961958,
+						"height": 28.945917240961954,
 						"originX": 0.5,
 						"originY": 0,
 						"color": [
@@ -795,6 +795,46 @@
 						"height": 46.48259809771211,
 						"originX": 0.45454545454545453,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "DesertBGF",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 150,
+					"sid": 421932377704510,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 421932377704510,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 319.5,
+						"y": 425.320987654321,
+						"width": 646.1506006339899,
+						"height": 371.1189512319188,
+						"originX": 0.5,
+						"originY": 1.1604938271604939,
 						"color": [
 							1,
 							1,

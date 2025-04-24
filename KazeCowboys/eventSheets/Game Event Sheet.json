@@ -196,6 +196,7 @@
 					"id": "go-to-layout-by-name",
 					"objectClass": "System",
 					"sid": 636842495681363,
+					"disabled": true,
 					"parameters": {
 						"layout": "\"CityLevel1\""
 					}
@@ -222,6 +223,7 @@
 					"id": "go-to-layout-by-name",
 					"objectClass": "System",
 					"sid": 283020976176952,
+					"disabled": true,
 					"parameters": {
 						"layout": "\"SewersLevel1\""
 					}

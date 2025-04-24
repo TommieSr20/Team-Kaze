@@ -5,7 +5,48 @@
 			"name": "BG",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "DesertBGF",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 148,
+					"sid": 651888717316597,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 651888717316597,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 320,
+						"y": 424.26506024096386,
+						"width": 648.1506006339899,
+						"height": 369.1189512319188,
+						"originX": 0.5,
+						"originY": 1.1604938271604939,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 285998568871659,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -142,8 +183,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -1,
-						"y": 0,
+						"x": 14,
+						"y": 428,
 						"width": 641,
 						"height": 361,
 						"originX": 0,
