@@ -107,11 +107,6 @@
 						"Health": 4
 					},
 					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
 						"Platform": {
 							"properties": {
 								"max-speed": 350,

@@ -8,15 +8,15 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"image": {
-		"width": 640,
-		"height": 360,
+		"width": 248,
+		"height": 81,
 		"originX": 0.5,
 		"originY": 0.5,
 		"originalSource": "",
 		"exportFormat": "lossless",
 		"exportQuality": 0.8,
 		"fileType": "image/png",
-		"imageSpriteId": 5422824,
+		"imageSpriteId": 1099188,
 		"useCollisionPoly": true,
 		"tag": ""
 	}

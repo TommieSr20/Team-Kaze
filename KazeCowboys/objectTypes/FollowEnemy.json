@@ -1,5 +1,5 @@
 {
-	"name": "DroneEnemy",
+	"name": "FollowEnemy",
 	"plugin-id": "Sprite",
 	"sid": 549929331169619,
 	"isGlobal": false,

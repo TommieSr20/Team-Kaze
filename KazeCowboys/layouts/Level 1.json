@@ -724,7 +724,7 @@
 					}
 				},
 				{
-					"type": "DroneEnemy",
+					"type": "FollowEnemy",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1005,73 +1005,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Shogun",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Right",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 52,
-					"sid": 721301580035858,
-					"tags": "",
-					"instanceVariables": {
-						"Health": 10
-					},
-					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"Platform": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 200,
-								"deceleration": 300,
-								"jump-strength": 626,
-								"gravity": 1500,
-								"max-fall-speed": 600,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"Wrap": {
-							"properties": {
-								"wrap-to": "viewport"
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 721301580035858,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 17,
-						"y": 318,
-						"width": 21.379428301467236,
-						"height": 29.602285340493097,
-						"originX": 0.5897435897435898,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 117677033061736,
@@ -1137,6 +1070,68 @@
 						"width": 172.29770681244045,
 						"height": 46.48259809771211,
 						"originX": 0.45454545454545453,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Shogun",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Right",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 52,
+					"sid": 721301580035858,
+					"tags": "",
+					"instanceVariables": {
+						"Health": 10
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 200,
+								"deceleration": 300,
+								"jump-strength": 626,
+								"gravity": 1500,
+								"max-fall-speed": 600,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"Wrap": {
+							"properties": {
+								"wrap-to": "viewport"
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 721301580035858,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 17,
+						"y": 318,
+						"width": 21.379428301467236,
+						"height": 29.602285340493097,
+						"originX": 0.5897435897435898,
 						"originY": 0.5,
 						"color": [
 							1,

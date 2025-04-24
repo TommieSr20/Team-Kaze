@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "DesertBGF",
+					"type": "WastelandBG",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -15,13 +15,13 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 148,
-					"sid": 651888717316597,
+					"uid": 132,
+					"sid": 566453366628633,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 651888717316597,
+						"sid": 566453366628633,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -30,12 +30,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 320,
-						"y": 424.26506024096386,
-						"width": 648.1506006339899,
-						"height": 369.1189512319188,
+						"x": 319,
+						"y": 415,
+						"width": 643,
+						"height": 364.99999999999994,
 						"originX": 0.5,
-						"originY": 1.1604938271604939,
+						"originY": 1.144578313253012,
 						"color": [
 							1,
 							1,
@@ -149,56 +149,6 @@
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
-				{
-					"type": "Wasteland",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0,
-						"enable-tile-randomization": false,
-						"x-random": 1,
-						"y-random": 1,
-						"angle-random": 1,
-						"blend-margin-x": 0.1,
-						"blend-margin-y": 0.1
-					},
-					"uid": 134,
-					"sid": 716833038076734,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 716833038076734,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 14,
-						"y": 428,
-						"width": 641,
-						"height": 361,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
 				{
 					"type": "RockTiles",
 					"properties": {
@@ -356,11 +306,6 @@
 						"Health": 10
 					},
 					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
 						"Platform": {
 							"properties": {
 								"max-speed": 200,
@@ -397,150 +342,6 @@
 						"height": 29.602285340493097,
 						"originX": 0.5897435897435898,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "DroneEnemy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 142,
-					"sid": 767470061550596,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Turret": {
-							"properties": {
-								"range": 300,
-								"rate-of-fire": 1,
-								"rotate": true,
-								"rotate-speed": 180,
-								"target-mode": "first-in-range",
-								"predictive-aim": false,
-								"projectile-speed": 500,
-								"use-collision-cells": true,
-								"enabled": true
-							}
-						},
-						"Follow": {
-							"properties": {
-								"mode": "distance",
-								"delay": 1,
-								"max-delay": 1,
-								"history-rate": 30,
-								"follow-x": true,
-								"follow-y": true,
-								"follow-z-elevation": false,
-								"follow-width": false,
-								"follow-height": false,
-								"follow-angle": false,
-								"follow-opacity": false,
-								"follow-visibility": false,
-								"follow-destroyed": true,
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 767470061550596,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 250,
-						"y": 159,
-						"width": 19,
-						"height": 27,
-						"originX": 0.5263157894736842,
-						"originY": 0.4074074074074074,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "DroneEnemy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 143,
-					"sid": 695809930846553,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Turret": {
-							"properties": {
-								"range": 300,
-								"rate-of-fire": 1,
-								"rotate": true,
-								"rotate-speed": 180,
-								"target-mode": "first-in-range",
-								"predictive-aim": false,
-								"projectile-speed": 500,
-								"use-collision-cells": true,
-								"enabled": true
-							}
-						},
-						"Follow": {
-							"properties": {
-								"mode": "distance",
-								"delay": 1,
-								"max-delay": 1,
-								"history-rate": 30,
-								"follow-x": true,
-								"follow-y": true,
-								"follow-z-elevation": false,
-								"follow-width": false,
-								"follow-height": false,
-								"follow-angle": false,
-								"follow-opacity": false,
-								"follow-visibility": false,
-								"follow-destroyed": true,
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 695809930846553,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 394,
-						"y": 145,
-						"width": 19,
-						"height": 27,
-						"originX": 0.5263157894736842,
-						"originY": 0.4074074074074074,
 						"color": [
 							1,
 							1,
@@ -660,7 +461,7 @@
 					}
 				},
 				{
-					"type": "DroneEnemy",
+					"type": "FlyingEnemy",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -668,11 +469,25 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 146,
-					"sid": 835270343965403,
+					"uid": 150,
+					"sid": 593443627130147,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
 						"Turret": {
 							"properties": {
 								"range": 300,
@@ -685,28 +500,10 @@
 								"use-collision-cells": true,
 								"enabled": true
 							}
-						},
-						"Follow": {
-							"properties": {
-								"mode": "distance",
-								"delay": 1,
-								"max-delay": 1,
-								"history-rate": 30,
-								"follow-x": true,
-								"follow-y": true,
-								"follow-z-elevation": false,
-								"follow-width": false,
-								"follow-height": false,
-								"follow-angle": false,
-								"follow-opacity": false,
-								"follow-visibility": false,
-								"follow-destroyed": true,
-								"enabled": true
-							}
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 835270343965403,
+						"sid": 593443627130147,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -715,12 +512,148 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 321,
-						"y": 87,
-						"width": 19,
-						"height": 27,
-						"originX": 0.5263157894736842,
-						"originY": 0.4074074074074074,
+						"x": 318,
+						"y": 90,
+						"width": 22,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.42857142857142855,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FlyingEnemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 151,
+					"sid": 620992991915481,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Turret": {
+							"properties": {
+								"range": 300,
+								"rate-of-fire": 1,
+								"rotate": true,
+								"rotate-speed": 180,
+								"target-mode": "first-in-range",
+								"predictive-aim": false,
+								"projectile-speed": 500,
+								"use-collision-cells": true,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 620992991915481,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 401,
+						"y": 154,
+						"width": 22,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.42857142857142855,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FlyingEnemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 152,
+					"sid": 377293315485141,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						},
+						"Turret": {
+							"properties": {
+								"range": 300,
+								"rate-of-fire": 1,
+								"rotate": true,
+								"rotate-speed": 180,
+								"target-mode": "first-in-range",
+								"predictive-aim": false,
+								"projectile-speed": 500,
+								"use-collision-cells": true,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 377293315485141,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 235,
+						"y": 165,
+						"width": 22,
+						"height": 28,
+						"originX": 0.5,
+						"originY": 0.42857142857142855,
 						"color": [
 							1,
 							1,
@@ -775,5 +708,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "Game Event Sheet"
 }

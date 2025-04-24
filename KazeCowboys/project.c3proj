@@ -78,13 +78,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -119,7 +112,7 @@
 			"Rock",
 			"House",
 			"RockTiles",
-			"DroneEnemy",
+			"FollowEnemy",
 			"CityTiles",
 			"CityTiles2",
 			"CityTiles3",
@@ -137,7 +130,7 @@
 			"Level2",
 			"Level3",
 			"Level1",
-			"DesertBGF"
+			"WastelandBG"
 		],
 		"subfolders": []
 	},

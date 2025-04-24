@@ -1,0 +1,52 @@
+{
+	"name": "WastelandBG",
+	"plugin-id": "Sprite",
+	"sid": 622768126185642,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 83,
+						"originX": 0.5,
+						"originY": 1.144578313253012,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1341883,
+						"collisionPoly": {
+							"points": [
+								0.004,
+								0.012048192771084338,
+								0.996,
+								0.012048192771084338,
+								0.996,
+								0.9879518072289156,
+								0.004,
+								0.9879518072289156
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 598070581531651,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

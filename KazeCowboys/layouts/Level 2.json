@@ -612,11 +612,6 @@
 						"Health": 4
 					},
 					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
 						"Platform": {
 							"properties": {
 								"max-speed": 200,
@@ -732,7 +727,7 @@
 					}
 				},
 				{
-					"type": "DroneEnemy",
+					"type": "FollowEnemy",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

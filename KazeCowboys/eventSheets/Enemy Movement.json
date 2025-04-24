@@ -31,7 +31,7 @@
 				},
 				{
 					"id": "add-object-to-target",
-					"objectClass": "DroneEnemy",
+					"objectClass": "FollowEnemy",
 					"sid": 786456356494344,
 					"behaviorType": "Turret",
 					"parameters": {
@@ -40,7 +40,7 @@
 				},
 				{
 					"id": "follow-object",
-					"objectClass": "DroneEnemy",
+					"objectClass": "FollowEnemy",
 					"sid": 978865175419072,
 					"behaviorType": "Follow",
 					"parameters": {
@@ -102,7 +102,7 @@
 			"conditions": [
 				{
 					"id": "has-target",
-					"objectClass": "DroneEnemy",
+					"objectClass": "FollowEnemy",
 					"sid": 719385802947140,
 					"behaviorType": "Turret"
 				}
@@ -110,7 +110,7 @@
 			"actions": [
 				{
 					"id": "set-rate-of-fire",
-					"objectClass": "DroneEnemy",
+					"objectClass": "FollowEnemy",
 					"sid": 636023735683991,
 					"behaviorType": "Turret",
 					"parameters": {
@@ -177,7 +177,7 @@
 			"conditions": [
 				{
 					"id": "on-shoot",
-					"objectClass": "DroneEnemy",
+					"objectClass": "FollowEnemy",
 					"sid": 656344349131403,
 					"behaviorType": "Turret"
 				}
@@ -185,7 +185,7 @@
 			"actions": [
 				{
 					"id": "spawn-another-object",
-					"objectClass": "DroneEnemy",
+					"objectClass": "FollowEnemy",
 					"sid": 544656463096454,
 					"parameters": {
 						"object": "EnemyBullet",
@@ -230,7 +230,7 @@
 					"objectClass": "System",
 					"sid": 984845570296431,
 					"parameters": {
-						"object": "DroneEnemy"
+						"object": "FollowEnemy"
 					}
 				}
 			],
@@ -267,7 +267,7 @@
 						},
 						{
 							"id": "destroy",
-							"objectClass": "DroneEnemy",
+							"objectClass": "FollowEnemy",
 							"sid": 984517727680595
 						}
 					],
@@ -334,14 +334,14 @@
 					"objectClass": "PlayerBullet",
 					"sid": 897453966756760,
 					"parameters": {
-						"object": "DroneEnemy"
+						"object": "FollowEnemy"
 					}
 				}
 			],
 			"actions": [
 				{
 					"id": "destroy",
-					"objectClass": "DroneEnemy",
+					"objectClass": "FollowEnemy",
 					"sid": 261526260237943
 				},
 				{
@@ -383,7 +383,7 @@
 			"conditions": [
 				{
 					"id": "is-following-object",
-					"objectClass": "DroneEnemy",
+					"objectClass": "FollowEnemy",
 					"sid": 367279655398091,
 					"behaviorType": "Follow"
 				}
