@@ -131,7 +131,9 @@
 			"Level3",
 			"Level1",
 			"WastelandBG",
-			"KillingFloor"
+			"KillingFloor",
+			"Canyoncliff",
+			"Fplatform"
 		],
 		"subfolders": []
 	},

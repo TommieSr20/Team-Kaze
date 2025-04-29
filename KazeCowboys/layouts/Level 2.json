@@ -1044,10 +1044,10 @@
 					"world": {
 						"x": 621,
 						"y": 162,
-						"width": 34,
-						"height": 51,
+						"width": 29.75,
+						"height": 41.4375,
 						"originX": 0.5,
-						"originY": 0.5,
+						"originY": 0.34615384615384615,
 						"color": [
 							1,
 							1,
