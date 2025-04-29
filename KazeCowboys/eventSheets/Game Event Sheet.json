@@ -228,6 +228,27 @@
 				}
 			],
 			"sid": 633207582459966
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "KillingFloor",
+					"sid": 264941476511212,
+					"parameters": {
+						"object": "Shogun"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 773529433233699
+				}
+			],
+			"sid": 497861827283821
 		}
 	],
 	"sid": 286330987879726

@@ -5,48 +5,7 @@
 			"name": "Layer 0",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [
-				{
-					"type": "WastelandBG",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 134,
-					"sid": 919426235754492,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 919426235754492,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 319.5,
-						"y": 425.1772151898734,
-						"width": 643.84,
-						"height": 361.4096385542168,
-						"originX": 0.5,
-						"originY": 1.1772151898734178,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 282236460618394,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

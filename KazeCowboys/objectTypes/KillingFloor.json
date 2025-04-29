@@ -1,11 +1,17 @@
 {
-	"name": "WastelandBG",
+	"name": "KillingFloor",
 	"plugin-id": "Sprite",
-	"sid": 622768126185642,
+	"sid": 597408162036057,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 665248767432315
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -13,32 +19,20 @@
 				"frames": [
 					{
 						"width": 250,
-						"height": 83,
+						"height": 250,
 						"originX": 0.5,
-						"originY": 1.144578313253012,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1341883,
-						"collisionPoly": {
-							"points": [
-								0.004,
-								0.012048192771084338,
-								0.996,
-								0.012048192771084338,
-								0.996,
-								0.9879518072289156,
-								0.004,
-								0.9879518072289156
-							]
-						},
+						"imageSpriteId": 5451889,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 598070581531651,
+				"sid": 501141484625323,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
