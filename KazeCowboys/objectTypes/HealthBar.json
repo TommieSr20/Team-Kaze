@@ -2,7 +2,7 @@
 	"name": "HealthBar",
 	"plugin-id": "Sprite",
 	"sid": 535796075412216,
-	"isGlobal": false,
+	"isGlobal": true,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
