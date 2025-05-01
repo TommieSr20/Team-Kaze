@@ -501,11 +501,11 @@
 				{
 					"id": "spawn-another-object",
 					"objectClass": "Shogun",
-					"sid": 591735958770750,
+					"sid": 622952247259819,
 					"parameters": {
 						"object": "ShogunParry",
 						"layer": "\"Game\"",
-						"image-point": "0",
+						"image-point": "Shogun.X+20",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}

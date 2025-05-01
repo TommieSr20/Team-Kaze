@@ -280,6 +280,7 @@
 					"id": "for-each",
 					"objectClass": "System",
 					"sid": 412475685538763,
+					"disabled": true,
 					"parameters": {
 						"object": "FlyingEnemy"
 					}
@@ -288,6 +289,7 @@
 					"id": "for-each",
 					"objectClass": "System",
 					"sid": 984845570296431,
+					"disabled": true,
 					"parameters": {
 						"object": "FollowEnemy"
 					}
@@ -322,12 +324,14 @@
 						{
 							"id": "destroy",
 							"objectClass": "FlyingEnemy",
-							"sid": 172186335166255
+							"sid": 172186335166255,
+							"disabled": true
 						},
 						{
 							"id": "destroy",
 							"objectClass": "FollowEnemy",
-							"sid": 984517727680595
+							"sid": 984517727680595,
+							"disabled": true
 						}
 					],
 					"sid": 180311271256733
@@ -556,7 +560,8 @@
 					}
 				}
 			],
-			"sid": 863975049448992
+			"sid": 863975049448992,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -578,7 +583,8 @@
 					}
 				}
 			],
-			"sid": 237345759469771
+			"sid": 237345759469771,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -600,7 +606,8 @@
 					}
 				}
 			],
-			"sid": 231738109839401
+			"sid": 231738109839401,
+			"disabled": true
 		}
 	],
 	"sid": 280257233755955
