@@ -191,9 +191,9 @@
 					"locked": false,
 					"world": {
 						"x": 162,
-						"y": 15,
+						"y": 13.666666666666668,
 						"width": 340.3890649866461,
-						"height": 122.99999999999999,
+						"height": 112.99999999999999,
 						"originX": 0.5046728971962616,
 						"originY": 0.8666666666666667,
 						"color": [
@@ -318,9 +318,9 @@
 					"locked": false,
 					"world": {
 						"x": 440,
-						"y": 113.125,
+						"y": 97.75,
 						"width": 205,
-						"height": 67,
+						"height": 58,
 						"originX": 0.5409836065573771,
 						"originY": 1.7083333333333333,
 						"color": [
@@ -364,10 +364,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 272.2333816214199,
-						"y": 80.08701538263301,
+						"x": 270.41524648553354,
+						"y": 76.85835543297696,
 						"width": 118.89014475238577,
-						"height": 27.200196113691007,
+						"height": 19.789430851491055,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -466,10 +466,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 18,
+						"x": 23,
 						"y": 218,
-						"width": 21.379428301467236,
-						"height": 29.602285340493097,
+						"width": 33.379428,
+						"height": 48.602285,
 						"originX": 0.5897435897435898,
 						"originY": 0.5,
 						"color": [
@@ -737,9 +737,9 @@
 					"locked": false,
 					"world": {
 						"x": 112,
-						"y": 59.5,
+						"y": 55.5,
 						"width": 227,
-						"height": 115,
+						"height": 107,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -784,8 +784,8 @@
 					"locked": false,
 					"world": {
 						"x": 364,
-						"y": 31.999999999999993,
-						"width": 60,
+						"y": 28.999999999999993,
+						"width": 54,
 						"height": 334,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -918,9 +918,9 @@
 					"locked": false,
 					"world": {
 						"x": 346,
-						"y": 313,
+						"y": 314.5,
 						"width": 151,
-						"height": 88,
+						"height": 91,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1058,10 +1058,51 @@
 			"global": false
 		},
 		{
-			"name": "Player",
+			"name": "Game",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "HealthBar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "5",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 296,
+					"sid": 772084029616201,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 772084029616201,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 88,
+						"y": 20,
+						"width": 200,
+						"height": 44,
+						"originX": 0.45454545454545453,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 445708211139913,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
