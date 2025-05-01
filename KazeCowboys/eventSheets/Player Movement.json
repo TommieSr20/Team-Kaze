@@ -764,7 +764,7 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Shogun",
-					"sid": 774648104683629,
+					"sid": 345574136112527,
 					"parameters": {
 						"animation": "\"Run\"",
 						"from": "beginning"
@@ -786,6 +786,7 @@
 					"id": "is-on-floor",
 					"objectClass": "Shogun",
 					"sid": 327673250081529,
+					"disabled": true,
 					"behaviorType": "Platform"
 				}
 			],
@@ -823,7 +824,8 @@
 					}
 				}
 			],
-			"sid": 420884160474881
+			"sid": 420884160474881,
+			"disabled": true
 		}
 	],
 	"sid": 423247619378648

@@ -37,9 +37,9 @@
 				{
 					"id": "go-to-layout-by-name",
 					"objectClass": "System",
-					"sid": 916289951357835,
+					"sid": 543527674803232,
 					"parameters": {
-						"layout": "\"Level 1\""
+						"layout": "\"DesertLevel1\""
 					}
 				}
 			],
@@ -52,6 +52,7 @@
 					"id": "on-collision-with-another-object",
 					"objectClass": "FlyingEnemy",
 					"sid": 943381773703146,
+					"disabled": true,
 					"parameters": {
 						"object": "Shogun"
 					}
@@ -62,6 +63,7 @@
 					"id": "subtract-from-instvar",
 					"objectClass": "Shogun",
 					"sid": 600163098286570,
+					"disabled": true,
 					"parameters": {
 						"instance-variable": "Health",
 						"value": "1"

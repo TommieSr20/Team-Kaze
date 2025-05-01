@@ -637,7 +637,7 @@
 			"global": false
 		},
 		{
-			"name": "Player",
+			"name": "Game",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [],
