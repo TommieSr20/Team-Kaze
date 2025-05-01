@@ -1,12 +1,12 @@
 {
-	"name": "CityLevel3",
+	"name": "DesertLevel7",
 	"layers": [
 		{
 			"name": "Layer 0",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [],
-			"sid": 925493499338212,
+			"sid": 929256884430895,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -40,7 +40,7 @@
 		"items": [],
 		"subfolders": []
 	},
-	"sid": 112133646057616,
+	"sid": 314208500649501,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1280,

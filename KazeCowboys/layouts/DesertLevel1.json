@@ -104,46 +104,6 @@
 					}
 				},
 				{
-					"type": "RockFloor",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 115,
-					"sid": 902836589871978,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 902836589871978,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 97,
-						"y": 332,
-						"width": 112.3782669354994,
-						"height": 28.945917240961954,
-						"originX": 0.5,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "WastelandBG",
 					"properties": {
 						"initially-visible": true,
@@ -168,9 +128,9 @@
 					"locked": false,
 					"world": {
 						"x": 318.5,
-						"y": 413.72289156626505,
+						"y": 408,
 						"width": 643,
-						"height": 365,
+						"height": 360,
 						"originX": 0.5,
 						"originY": 1.144578313253012,
 						"color": [
@@ -907,8 +867,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 79,
-						"y": 23,
+						"x": 76,
+						"y": 22,
 						"width": 172.29770681244045,
 						"height": 46.48259809771211,
 						"originX": 0.45454545454545453,
