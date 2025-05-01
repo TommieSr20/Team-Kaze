@@ -7,7 +7,61 @@
 				{
 					"id": "compare-instance-variable",
 					"objectClass": "Shogun",
-					"sid": 357253095386864,
+					"sid": 828622880460233,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HealthBar",
+					"sid": 837690083482306,
+					"parameters": {
+						"animation": "\"6\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 286708848201862
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shogun",
+					"sid": 644091829263705,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "HealthBar",
+					"sid": 543947078270976,
+					"parameters": {
+						"animation": "\"5\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 167034269406873
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Shogun",
+					"sid": 117339179510579,
 					"parameters": {
 						"instance-variable": "Health",
 						"comparison": 0,
@@ -19,15 +73,14 @@
 				{
 					"id": "set-animation",
 					"objectClass": "HealthBar",
-					"sid": 963232012809174,
+					"sid": 259128310525857,
 					"parameters": {
-						"animation": "\"Full\"",
+						"animation": "\"4\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 286708848201862,
-			"disabled": true
+			"sid": 445198936560267
 		},
 		{
 			"eventType": "block",
@@ -47,15 +100,14 @@
 				{
 					"id": "set-animation",
 					"objectClass": "HealthBar",
-					"sid": 190983139846931,
+					"sid": 496602417580581,
 					"parameters": {
-						"animation": "\"Medium\"",
+						"animation": "\"3\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 167241171294391,
-			"disabled": true
+			"sid": 167241171294391
 		},
 		{
 			"eventType": "block",
@@ -75,15 +127,14 @@
 				{
 					"id": "set-animation",
 					"objectClass": "HealthBar",
-					"sid": 749833647634497,
+					"sid": 167342338930224,
 					"parameters": {
-						"animation": "\"Low\"",
+						"animation": "\"2\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 150617517363603,
-			"disabled": true
+			"sid": 150617517363603
 		},
 		{
 			"eventType": "block",
@@ -103,15 +154,14 @@
 				{
 					"id": "set-animation",
 					"objectClass": "HealthBar",
-					"sid": 423826598410090,
+					"sid": 857524615917126,
 					"parameters": {
-						"animation": "\"VeryLow\"",
+						"animation": "\"1\"",
 						"from": "beginning"
 					}
 				}
 			],
-			"sid": 878133270599814,
-			"disabled": true
+			"sid": 878133270599814
 		},
 		{
 			"eventType": "block",
@@ -131,9 +181,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "HealthBar",
-					"sid": 357242189640150,
+					"sid": 442495544630390,
 					"parameters": {
-						"animation": "\"None\"",
+						"animation": "\"0\"",
 						"from": "beginning"
 					}
 				},

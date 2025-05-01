@@ -1534,7 +1534,7 @@
 					"type": "HealthBar",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Full",
+						"initial-animation": "5",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -1556,8 +1556,8 @@
 					"world": {
 						"x": 54,
 						"y": 15,
-						"width": 30.468212943984756,
-						"height": 3.877772556507151,
+						"width": 55,
+						"height": 14,
 						"originX": 0.45454545454545453,
 						"originY": 0.5,
 						"color": [

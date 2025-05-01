@@ -33,7 +33,7 @@
 						"x": 319,
 						"y": 413.421686746988,
 						"width": 643,
-						"height": 361,
+						"height": 361.00000000000006,
 						"originX": 0.5,
 						"originY": 1.144578313253012,
 						"color": [
@@ -112,8 +112,8 @@
 					"world": {
 						"x": 183,
 						"y": 243,
-						"width": 78.93625184854015,
-						"height": 30.888824892412458,
+						"width": 78.93625184854017,
+						"height": 30.88882489241246,
 						"originX": 0.5294117647058824,
 						"originY": 0.3620689655172414,
 						"color": [
@@ -400,5 +400,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "Game Event Sheet"
 }
