@@ -199,9 +199,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 834978284351730,
+					"sid": 319511433956957,
 					"parameters": {
-						"seconds": "5",
+						"seconds": ".5",
 						"use-timescale": true
 					}
 				},
@@ -410,9 +410,9 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "key-is-down",
+					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 481171216429634,
+					"sid": 708872396929696,
 					"parameters": {
 						"key": 83
 					}
@@ -640,10 +640,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 738564583318729,
-					"disabled": true,
+					"sid": 650700255383502,
 					"parameters": {
-						"seconds": "3",
+						"seconds": "1",
 						"use-timescale": true
 					}
 				},
@@ -655,6 +654,11 @@
 						"instance-variable": "Health",
 						"value": "1"
 					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Shogun",
+					"sid": 880454687818043
 				}
 			],
 			"sid": 830056248957106
