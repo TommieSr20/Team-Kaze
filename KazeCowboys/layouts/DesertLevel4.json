@@ -684,10 +684,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 16,
-						"y": 92,
-						"width": 21.379428301467236,
-						"height": 29.602285340493097,
+						"x": 22,
+						"y": 83,
+						"width": 33.379428,
+						"height": 48.602285,
 						"originX": 0.5897435897435898,
 						"originY": 0.5,
 						"color": [

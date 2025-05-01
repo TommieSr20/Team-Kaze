@@ -42,6 +42,7 @@
 					"id": "follow-object",
 					"objectClass": "FollowEnemy",
 					"sid": 978865175419072,
+					"disabled": true,
 					"behaviorType": "Follow",
 					"parameters": {
 						"object": "Shogun",
@@ -388,8 +389,19 @@
 					"behaviorType": "Follow"
 				}
 			],
-			"actions": [],
-			"sid": 202380152017861
+			"actions": [
+				{
+					"id": "set-delay",
+					"objectClass": "FollowEnemy",
+					"sid": 210712650223554,
+					"behaviorType": "Follow",
+					"parameters": {
+						"delay": "5"
+					}
+				}
+			],
+			"sid": 202380152017861,
+			"disabled": true
 		}
 	],
 	"sid": 280257233755955

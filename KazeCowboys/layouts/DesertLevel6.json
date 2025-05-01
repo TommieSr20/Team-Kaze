@@ -640,7 +640,70 @@
 			"name": "Game",
 			"overriden": 0,
 			"subLayers": [],
-			"instances": [],
+			"instances": [
+				{
+					"type": "Shogun",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Right",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 256,
+					"sid": 115264606272321,
+					"tags": "",
+					"instanceVariables": {
+						"Health": 6
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 200,
+								"deceleration": 300,
+								"jump-strength": 626,
+								"gravity": 1500,
+								"max-fall-speed": 600,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"Wrap": {
+							"properties": {
+								"wrap-to": "viewport"
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 115264606272321,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 20,
+						"y": 180,
+						"width": 33.379428,
+						"height": 48.602285,
+						"originX": 0.5897435897435898,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
 			"sid": 318344927490307,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
@@ -1056,68 +1119,6 @@
 						"width": 168,
 						"height": 154,
 						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Shogun",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Right",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 256,
-					"sid": 115264606272321,
-					"tags": "",
-					"instanceVariables": {
-						"Health": 6
-					},
-					"behaviors": {
-						"Platform": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 200,
-								"deceleration": 300,
-								"jump-strength": 626,
-								"gravity": 1500,
-								"max-fall-speed": 600,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"Wrap": {
-							"properties": {
-								"wrap-to": "viewport"
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 115264606272321,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 14,
-						"y": 190,
-						"width": 21.379428301467236,
-						"height": 29.602285340493097,
-						"originX": 0.5897435897435898,
 						"originY": 0.5,
 						"color": [
 							1,
