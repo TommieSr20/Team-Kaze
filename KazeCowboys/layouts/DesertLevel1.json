@@ -455,7 +455,7 @@
 								"jump-strength": 626,
 								"gravity": 1500,
 								"max-fall-speed": 600,
-								"double-jump": false,
+								"double-jump": true,
 								"jump-sustain": 0,
 								"default-controls": true,
 								"enabled": true
@@ -748,18 +748,6 @@
 								"magnitude-random": 0,
 								"enabled": true,
 								"live-preview": false
-							}
-						},
-						"8Direction": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 500,
-								"directions": "dir-8",
-								"set-angle": "smooth",
-								"allow-sliding": false,
-								"default-controls": true,
-								"enabled": true
 							}
 						}
 					},

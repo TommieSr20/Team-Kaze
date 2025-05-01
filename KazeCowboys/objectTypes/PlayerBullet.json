@@ -15,11 +15,6 @@
 			"behaviorId": "Sin",
 			"name": "Sine",
 			"sid": 803478154020283
-		},
-		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 263856385213313
 		}
 	],
 	"effectTypes": [],
