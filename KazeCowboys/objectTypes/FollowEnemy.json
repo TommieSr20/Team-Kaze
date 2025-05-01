@@ -15,6 +15,11 @@
 			"behaviorId": "Follow",
 			"name": "Follow",
 			"sid": 192967557653916
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 603925571335507
 		}
 	],
 	"effectTypes": [],

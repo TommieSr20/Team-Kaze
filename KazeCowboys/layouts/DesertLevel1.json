@@ -659,7 +659,7 @@
 					"behaviors": {
 						"Sine": {
 							"properties": {
-								"movement": "horizontal",
+								"movement": "vertical",
 								"wave": "sine",
 								"period": 4,
 								"period-random": 0,
