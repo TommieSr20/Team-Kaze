@@ -216,7 +216,7 @@
 					"sid": 748616593064082,
 					"tags": "",
 					"instanceVariables": {
-						"Health": 10
+						"Health": 6
 					},
 					"behaviors": {
 						"Platform": {
@@ -969,52 +969,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 517,
-						"y": 131,
+						"x": 515,
+						"y": 130,
 						"width": 27,
 						"height": 19,
 						"originX": 0,
 						"originY": 0.42105263157894735,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "HealthBar",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Full",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 243,
-					"sid": 312022562704056,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 312022562704056,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 76,
-						"y": 22,
-						"width": 172.29770681244045,
-						"height": 46.48259809771211,
-						"originX": 0.45454545454545453,
-						"originY": 0.5,
 						"color": [
 							1,
 							1,
@@ -1118,6 +1078,46 @@
 						"height": 28,
 						"originX": 0.5,
 						"originY": 0.42857142857142855,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HealthBar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "6",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 243,
+					"sid": 312022562704056,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 312022562704056,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 90,
+						"y": 19,
+						"width": 200,
+						"height": 44,
+						"originX": 0.45454545454545453,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

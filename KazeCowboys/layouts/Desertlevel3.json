@@ -45,46 +45,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "HealthBar",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Full",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 242,
-					"sid": 986514245877679,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 986514245877679,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 76,
-						"y": 22,
-						"width": 172.29770681244045,
-						"height": 46.48259809771211,
-						"originX": 0.45454545454545453,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 285998568871659,
@@ -693,7 +653,7 @@
 					"sid": 669814601274064,
 					"tags": "",
 					"instanceVariables": {
-						"Health": 10
+						"Health": 6
 					},
 					"behaviors": {
 						"Platform": {
@@ -1197,12 +1157,52 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 245,
+						"x": 243,
 						"y": 304,
 						"width": 27,
 						"height": 19,
 						"originX": 0,
 						"originY": 0.42105263157894735,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HealthBar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "6",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 242,
+					"sid": 986514245877679,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 986514245877679,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 90,
+						"y": 20,
+						"width": 200,
+						"height": 44,
+						"originX": 0.45454545454545453,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

@@ -300,7 +300,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 302,
+						"x": 300,
 						"y": 135,
 						"width": 27,
 						"height": 19,
@@ -536,7 +536,7 @@
 					"type": "HealthBar",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Full",
+						"initial-animation": "6",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -556,10 +556,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 76,
-						"y": 22,
-						"width": 172.29770681244045,
-						"height": 46.48259809771211,
+						"x": 90,
+						"y": 23,
+						"width": 200,
+						"height": 44,
 						"originX": 0.45454545454545453,
 						"originY": 0.5,
 						"color": [
@@ -1080,7 +1080,7 @@
 					"sid": 115264606272321,
 					"tags": "",
 					"instanceVariables": {
-						"Health": 10
+						"Health": 6
 					},
 					"behaviors": {
 						"Platform": {

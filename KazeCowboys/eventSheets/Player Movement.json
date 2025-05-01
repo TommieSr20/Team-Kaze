@@ -639,6 +639,16 @@
 					}
 				},
 				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 738564583318729,
+					"disabled": true,
+					"parameters": {
+						"seconds": "3",
+						"use-timescale": true
+					}
+				},
+				{
 					"id": "subtract-from-instvar",
 					"objectClass": "Shogun",
 					"sid": 457954228077476,
