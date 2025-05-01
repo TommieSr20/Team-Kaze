@@ -48,6 +48,15 @@
 						"object": "Shogun",
 						"from-current-position": false
 					}
+				},
+				{
+					"id": "add-object-to-target",
+					"objectClass": "Boss",
+					"sid": 155059901477070,
+					"behaviorType": "Turret",
+					"parameters": {
+						"target": "Shogun"
+					}
 				}
 			],
 			"sid": 925526834857545
@@ -120,6 +129,29 @@
 				}
 			],
 			"sid": 695117066903765
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-target",
+					"objectClass": "Boss",
+					"sid": 806317656492014,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-rate-of-fire",
+					"objectClass": "Boss",
+					"sid": 359521030107672,
+					"behaviorType": "Turret",
+					"parameters": {
+						"rate-of-fire": "1"
+					}
+				}
+			],
+			"sid": 598187689446989
 		},
 		{
 			"eventType": "block",
@@ -198,6 +230,32 @@
 				}
 			],
 			"sid": 253773185975648
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-shoot",
+					"objectClass": "Boss",
+					"sid": 852461182100067,
+					"behaviorType": "Turret"
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Boss",
+					"sid": 431921617376073,
+					"parameters": {
+						"object": "EnemyBullet",
+						"layer": "\"Game\"",
+						"image-point": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 119071223764708
 		},
 		{
 			"eventType": "block",
@@ -402,6 +460,147 @@
 			],
 			"sid": 202380152017861,
 			"disabled": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlayerBullet",
+					"sid": 586150028516144,
+					"parameters": {
+						"object": "Boss"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Boss",
+					"sid": 203055284662374,
+					"parameters": {
+						"animation": "\"Hit\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Boss",
+					"sid": 978718163422500,
+					"parameters": {
+						"instance-variable": "Health",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 447893561236839
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Boss",
+					"sid": 184379224187262,
+					"parameters": {
+						"instance-variable": "Health",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Boss",
+					"sid": 911135040249752,
+					"parameters": {
+						"animation": "\"Explosion\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 643416157162090,
+					"parameters": {
+						"seconds": "5",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Boss",
+					"sid": 310663253151218
+				}
+			],
+			"sid": 963560533400895
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "FlyingEnemy",
+					"sid": 833593600533315
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "FlyingEnemy",
+					"sid": 158489075372818,
+					"parameters": {
+						"animation": "\"Explosion\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 863975049448992
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "FollowEnemy",
+					"sid": 668188982128780
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "FollowEnemy",
+					"sid": 821634982014360,
+					"parameters": {
+						"animation": "\"Explosion\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 237345759469771
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Turret",
+					"sid": 158994942702003
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Turret",
+					"sid": 820965719128538,
+					"parameters": {
+						"animation": "\"Explosion\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 231738109839401
 		}
 	],
 	"sid": 280257233755955

@@ -844,46 +844,6 @@
 						"angle": 6.273163040094459,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "EndDoor",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 307,
-					"sid": 145627006935670,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 145627006935670,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 326,
-						"y": 92,
-						"width": 34,
-						"height": 51,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 145375176019545,
@@ -981,6 +941,134 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Boss",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 308,
+					"sid": 589976377167512,
+					"tags": "",
+					"instanceVariables": {
+						"Health": 10
+					},
+					"behaviors": {
+						"Turret": {
+							"properties": {
+								"range": 300,
+								"rate-of-fire": 1,
+								"rotate": true,
+								"rotate-speed": 180,
+								"target-mode": "first-in-range",
+								"predictive-aim": false,
+								"projectile-speed": 500,
+								"use-collision-cells": true,
+								"enabled": true
+							}
+						},
+						"Follow": {
+							"properties": {
+								"mode": "distance",
+								"delay": 1,
+								"max-delay": 1,
+								"history-rate": 30,
+								"follow-x": true,
+								"follow-y": true,
+								"follow-z-elevation": false,
+								"follow-width": false,
+								"follow-height": false,
+								"follow-angle": false,
+								"follow-opacity": false,
+								"follow-visibility": false,
+								"follow-destroyed": true,
+								"enabled": true
+							}
+						},
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 4,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 50,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 589976377167512,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 327,
+						"y": 184,
+						"width": 35,
+						"height": 45,
+						"originX": 0.5263157894736842,
+						"originY": 0.4074074074074074,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "EndDoor",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 307,
+					"sid": 145627006935670,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 145627006935670,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 326,
+						"y": 92,
+						"width": 34,
+						"height": 51,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 728541559017696,
@@ -1021,18 +1109,18 @@
 					"type": "HealthBar",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "5",
+						"initial-animation": "6",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 291,
-					"sid": 290214042934557,
+					"sid": 569573546628979,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 290214042934557,
+						"sid": 569573546628979,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -1041,8 +1129,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 88,
-						"y": 23,
+						"x": 91,
+						"y": 24,
 						"width": 200,
 						"height": 44,
 						"originX": 0.45454545454545453,
@@ -1101,5 +1189,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "Game Event Sheet"
 }

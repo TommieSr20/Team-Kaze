@@ -111,7 +111,7 @@
 					"locked": false,
 					"world": {
 						"x": 593,
-						"y": 118,
+						"y": 142,
 						"width": 109.88630487917956,
 						"height": 43,
 						"originX": 0.5294117647058824,
@@ -231,7 +231,7 @@
 					"locked": false,
 					"world": {
 						"x": 481,
-						"y": 192,
+						"y": 207,
 						"width": 109.88630487917956,
 						"height": 43,
 						"originX": 0.5294117647058824,
@@ -377,108 +377,6 @@
 							1
 						],
 						"angle": 2.6287294828434105,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Door",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 276,
-					"sid": 962934847409198,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 962934847409198,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 618,
-						"y": 77,
-						"width": 29.75,
-						"height": 41.4375,
-						"originX": 0.5,
-						"originY": 0.34615384615384615,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Shogun",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Right",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 277,
-					"sid": 235692013567811,
-					"tags": "",
-					"instanceVariables": {
-						"Health": 10
-					},
-					"behaviors": {
-						"Platform": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 200,
-								"deceleration": 300,
-								"jump-strength": 626,
-								"gravity": 1500,
-								"max-fall-speed": 600,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"Wrap": {
-							"properties": {
-								"wrap-to": "viewport"
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 235692013567811,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 23,
-						"y": 218,
-						"width": 33.379428,
-						"height": 48.602285,
-						"originX": 0.5897435897435898,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				}
@@ -964,8 +862,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 476,
-						"y": 185,
+						"x": 477,
+						"y": 200,
 						"width": 105,
 						"height": 16,
 						"originX": 0.5,
@@ -1012,7 +910,7 @@
 					"locked": false,
 					"world": {
 						"x": 586,
-						"y": 112,
+						"y": 135,
 						"width": 101,
 						"height": 16,
 						"originX": 0.5,
@@ -1063,21 +961,21 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "HealthBar",
+					"type": "Door",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "5",
+						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 296,
-					"sid": 772084029616201,
+					"uid": 276,
+					"sid": 962934847409198,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 772084029616201,
+						"sid": 962934847409198,
 						"expanded": true,
 						"folderName": "",
 						"indexInFolder": -1,
@@ -1086,11 +984,73 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 88,
-						"y": 20,
-						"width": 200,
-						"height": 44,
-						"originX": 0.45454545454545453,
+						"x": 618,
+						"y": 99,
+						"width": 29.75,
+						"height": 41.4375,
+						"originX": 0.5,
+						"originY": 0.34615384615384615,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Shogun",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Right",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 277,
+					"sid": 235692013567811,
+					"tags": "",
+					"instanceVariables": {
+						"Health": 10
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 200,
+								"acceleration": 200,
+								"deceleration": 300,
+								"jump-strength": 626,
+								"gravity": 1500,
+								"max-fall-speed": 600,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"Wrap": {
+							"properties": {
+								"wrap-to": "viewport"
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 235692013567811,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 23,
+						"y": 218,
+						"width": 33.379428,
+						"height": 48.602285,
+						"originX": 0.5897435897435898,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -1230,6 +1190,46 @@
 						"angle": 1.5892494609486802,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "HealthBar",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "6",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 296,
+					"sid": 236766414499433,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 236766414499433,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 90,
+						"y": 25,
+						"width": 200,
+						"height": 44,
+						"originX": 0.45454545454545453,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 372121646231861,
@@ -1275,5 +1275,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "Game Event Sheet"
 }

@@ -441,7 +441,6 @@
 					"id": "set-animation",
 					"objectClass": "Shogun",
 					"sid": 914627087931080,
-					"disabled": true,
 					"parameters": {
 						"animation": "\"Idle\"",
 						"from": "beginning"

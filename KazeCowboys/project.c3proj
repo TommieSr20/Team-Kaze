@@ -142,7 +142,8 @@
 			"Canyoncliff",
 			"Fplatform",
 			"Desertground",
-			"Arenafloor"
+			"Arenafloor",
+			"Boss"
 		],
 		"subfolders": []
 	},
@@ -158,8 +159,8 @@
 			"Level 2",
 			"Level 3",
 			"Layout 1",
-			"Start Screen",
 			"StartHub",
+			"Start Screen",
 			"DesertLevel1",
 			"DesertLevel2",
 			"Desertlevel3",
